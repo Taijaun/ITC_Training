@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelTitle.text = "ITC"
+        labelTitle.text = "ITC Training"
         labelEnterDetails.text = "Please enter your login details"
         
     }
