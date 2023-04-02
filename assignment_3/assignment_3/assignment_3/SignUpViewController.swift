@@ -15,7 +15,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelTitle.text = "Sign up"
+        labelTitle.text = "Sign up now"
 
         
     }
