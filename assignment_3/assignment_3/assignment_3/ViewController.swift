@@ -44,6 +44,22 @@ class ViewController: UIViewController {
         
         
     }
+    
+    @IBAction func buttonSignUpTapped(_ sender: Any) {
+        
+        // create an instance of the View Controller and cast it as the necesarry view controller type
+        let signUpViewController = self.storyboard?.instantiateViewController(withIdentifier: "SignUp") as! SignUpViewController
+        // use the navigation controller ot push the specified VC to the screen
+        self.navigationController?.pushViewController(signUpViewController, animated: true)
+    }
+    
+    @IBAction func buttonForgotPassword(_ sender: Any) {
+        
+        let resetPasswordViewController = self.storyboard?.instantiateViewController(withIdentifier: "ResetPassword") as! ResetPasswordViewController
+        self.navigationController?.pushViewController(resetPasswordViewController, animated: true)
+        
+    }
+    
 
 
 }
