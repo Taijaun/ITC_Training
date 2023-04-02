@@ -16,8 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaq-L6-4Dd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0yD-fn-eYE">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaq-L6-4Dd">
                                 <rect key="frame" x="185" y="79" width="54.333333333333343" height="27.666666666666671"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,16 +55,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="gaq-L6-4Dd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lHK-zX-aSE"/>
-                            <constraint firstItem="gaq-L6-4Dd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="185" id="usx-wa-rMo"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="labelEnterDetails" destination="aMG-MB-Gex" id="chi-Ud-2gU"/>
                         <outlet property="labelTitle" destination="gaq-L6-4Dd" id="3NN-jb-1cw"/>
                         <outlet property="tectFieldPassword" destination="pIH-DA-4q1" id="FX9-xt-orY"/>
-                        <outlet property="textFieldUsername" destination="Bu8-vd-Slz" id="y5R-DB-NgI"/>
+                        <outlet property="textFieldUsername" destination="Bu8-vd-Slz" id="ik6-mR-znY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

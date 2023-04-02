@@ -28,7 +28,8 @@ class Teacher: Person {
     
     func removeQualification(qualificationName: String){
         
-        qualifiedSubjects[qualificationName] = nil
+        //qualifiedSubjects[qualificationName] = nil
+        qualifiedSubjects.removeValue(forKey: qualificationName)
     }
     
     func changeVacationStatus() {
