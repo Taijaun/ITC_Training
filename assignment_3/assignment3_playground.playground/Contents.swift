@@ -85,7 +85,7 @@ getWeatherStatus(weather: .cloudy)
 
 // Enum raw value + computed property
 
-enum weekdays: Int {
+enum Weekdays: Int, CaseIterable {
     
     case Monday = 1
     case Tuesday = 2
@@ -105,7 +105,12 @@ enum weekdays: Int {
     }
 }
 
-func displayTypeOfDay(day: weekdays){
+// print the raw values for the enum
+for numOfDays in Weekdays.allCases {
+    print(numOfDays.rawValue)
+}
+
+func displayTypeOfDay(day: Weekdays){
     print(day.typeOfDay)
 }
 displayTypeOfDay(day: .Monday)
