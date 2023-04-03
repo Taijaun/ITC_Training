@@ -17,10 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MOi-rc-Gbo">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1f-bh-3EA">
                                 <rect key="frame" x="164" y="138" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -101,12 +97,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="MOi-rc-Gbo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fxh-YH-fVf"/>
-                            <constraint firstItem="MOi-rc-Gbo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="g9j-Ip-BxD"/>
-                            <constraint firstAttribute="trailing" secondItem="MOi-rc-Gbo" secondAttribute="trailing" id="qGV-ct-JaC"/>
-                            <constraint firstAttribute="bottom" secondItem="MOi-rc-Gbo" secondAttribute="bottom" id="seV-Vk-79T"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3hH-Bg-yWr"/>
                     <connections>
@@ -115,7 +105,6 @@
                         <outlet property="buttonLoginFacebook" destination="5zW-NV-KHl" id="Uyt-rC-Zl2"/>
                         <outlet property="buttonLoginGmail" destination="hoH-ri-sTC" id="A7s-BC-Vfy"/>
                         <outlet property="buttonSignUp" destination="F13-50-Q0j" id="9L4-yo-Dby"/>
-                        <outlet property="imageViewBackground" destination="MOi-rc-Gbo" id="oro-QA-WOE"/>
                         <outlet property="labelOr" destination="FXH-tW-hyT" id="XWa-7o-Rgz"/>
                         <outlet property="labelTitle" destination="B1f-bh-3EA" id="KIG-kd-mqM"/>
                         <outlet property="textFieldPassword" destination="rxE-BU-w1O" id="gr3-3W-ULd"/>
@@ -206,9 +195,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1XS-wD-dFt">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ld-Ay-Xl2">
                                 <rect key="frame" x="96" y="198" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -244,12 +230,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rdf-V2-8dC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="1XS-wD-dFt" firstAttribute="leading" secondItem="iOt-Gb-AgV" secondAttribute="leading" id="RG7-AE-AED"/>
-                            <constraint firstAttribute="trailing" secondItem="1XS-wD-dFt" secondAttribute="trailing" id="ctX-xq-GEO"/>
-                            <constraint firstAttribute="bottom" secondItem="1XS-wD-dFt" secondAttribute="bottom" id="jl9-Xm-hsT"/>
-                            <constraint firstItem="1XS-wD-dFt" firstAttribute="top" secondItem="iOt-Gb-AgV" secondAttribute="top" id="qp5-R2-5XW"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonSend" destination="m9X-NG-Cy9" id="PYU-Lz-HCS"/>
