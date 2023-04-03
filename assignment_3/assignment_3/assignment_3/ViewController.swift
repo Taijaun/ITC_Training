@@ -13,8 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var textFieldUsername: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
-    @IBOutlet weak var labelUsername: UILabel!
-    @IBOutlet weak var labelPassword: UILabel!
     @IBOutlet weak var buttonLogin: UIButton!
     @IBOutlet weak var buttonLoginGmail: UIButton!
     @IBOutlet weak var buttonLoginFacebook: UIButton!
@@ -27,10 +25,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         labelTitle.text = "ITC"
-        labelUsername.text = "Enter your email address:"
-        textFieldUsername.placeholder = "example@gmail.com"
-        labelPassword.text = "Enter your password:"
-        textFieldPassword.placeholder = "min 9 characters"
+        textFieldUsername.placeholder = "Email"
+        textFieldPassword.placeholder = "Password"
         buttonForgotPassword.setTitle("Forgot Password?", for: .normal)
         
         buttonLogin.setTitle("Login", for: .normal)
@@ -49,13 +45,17 @@ class ViewController: UIViewController {
         
         // create an instance of the View Controller and cast it as the necesarry view controller type
         let signUpViewController = self.storyboard?.instantiateViewController(withIdentifier: "SignUp") as! SignUpViewController
-        // use the navigation controller ot push the specified VC to the screen
+        // use the navigation controller to push the specified VC to the screen
         self.navigationController?.pushViewController(signUpViewController, animated: true)
     }
     
     @IBAction func buttonForgotPassword(_ sender: Any) {
         
-        let resetPasswordViewController = self.storyboard?.instantiateViewController(withIdentifier: "ResetPassword") as! ResetPasswordViewController
+        // Create a reference to the storyboard file
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        // Instantiate the view controller as a resetpassword view controller
+        let resetPasswordViewController = storyboard.instantiateViewController(withIdentifier: "ResetPassword")
+        // use the navigation controller to push it to the screen
         self.navigationController?.pushViewController(resetPasswordViewController, animated: true)
         
     }
