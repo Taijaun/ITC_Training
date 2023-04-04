@@ -73,14 +73,14 @@
 				DC9DA73629DBCFEB00A57C26 /* ViewController.swift */,
 				DC9DA74629DBD0A200A57C26 /* SignUpViewController.swift */,
 				DC9DA74829DBD0B100A57C26 /* ResetPasswordViewController.swift */,
+				DCED650829DC1ECA005CD82E /* ShowDataViewController.swift */,
+				DCED650C29DC343E005CD82E /* resultViewController.swift */,
+				DCED650A29DC2506005CD82E /* InfoTableViewCell.swift */,
 				DC9DA73829DBCFEB00A57C26 /* Main.storyboard */,
 				DC9DA73B29DBCFEC00A57C26 /* Assets.xcassets */,
 				DC9DA73D29DBCFEC00A57C26 /* LaunchScreen.storyboard */,
 				DC9DA74029DBCFEC00A57C26 /* Info.plist */,
 				DC6F0D5429DBF21B008ED465 /* Constants.swift */,
-				DCED650829DC1ECA005CD82E /* ShowDataViewController.swift */,
-				DCED650A29DC2506005CD82E /* InfoTableViewCell.swift */,
-				DCED650C29DC343E005CD82E /* resultViewController.swift */,
 			);
 			path = assignment_4;
 			sourceTree = "<group>";

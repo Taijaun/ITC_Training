@@ -29,9 +29,17 @@ class ShowDataViewController: UIViewController {
 
 extension ShowDataViewController: UITableViewDataSource{
     
-    // How many row
+    // How many rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return weekdays.count
+        
+        if section == 0 {
+            return weekdays.count
+        } else if section == 1 {
+            return planets.count
+        } else {
+            return weather.count
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
