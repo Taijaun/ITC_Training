@@ -24,7 +24,9 @@ class SignUpViewController: UIViewController {
         
         labelTitle.text = "Sign up now"
         textFieldUsername.placeholder = "E-mail"
+        textFieldUsername.borderStyle = .none
         textFieldPassword.placeholder = "Password"
+        textFieldPassword.borderStyle = .none
         switchAgreement.isOn = false
         labelAgreement.text = "I agree to the terms and conditions"
         buttonSignUp.setTitle("Sign up", for: .normal)

@@ -26,7 +26,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         labelTitle.text = "ITC"
         textFieldUsername.placeholder = "Email"
+        textFieldUsername.borderStyle = .none
         textFieldPassword.placeholder = "Password"
+        textFieldPassword.borderStyle = .none
         buttonForgotPassword.setTitle("Forgot Password?", for: .normal)
         
         buttonLogin.setTitle("Login", for: .normal)

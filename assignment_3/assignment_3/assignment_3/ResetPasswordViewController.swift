@@ -23,6 +23,7 @@ class ResetPasswordViewController: UIViewController {
         labelHelpInfo.text = "Enter your email and we will send you a password reset link"
         
         buttonSend.setTitle("Send", for: .normal)
+        textFieldEmail.borderStyle = .none
     }
     
 

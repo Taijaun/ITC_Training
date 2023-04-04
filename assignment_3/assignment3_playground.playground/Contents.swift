@@ -9,7 +9,15 @@ protocol canDrive {
     var hasCar: Bool { get set }
     
     func drive()
+    func speedUp()
     
+}
+
+extension canDrive {
+    
+    func speedUp() {
+        print("The car speeds up")
+    }
 }
 
 class Person: canDrive{
@@ -35,8 +43,8 @@ class Person: canDrive{
         }
     }
     
-    
 }
+
 
 // Enums
 
