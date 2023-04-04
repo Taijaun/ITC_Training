@@ -16,6 +16,9 @@
 		DC9DA73F29DBCFEC00A57C26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9DA73D29DBCFEC00A57C26 /* LaunchScreen.storyboard */; };
 		DC9DA74729DBD0A200A57C26 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9DA74629DBD0A200A57C26 /* SignUpViewController.swift */; };
 		DC9DA74929DBD0B100A57C26 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9DA74829DBD0B100A57C26 /* ResetPasswordViewController.swift */; };
+		DCED650929DC1ECA005CD82E /* ShowDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED650829DC1ECA005CD82E /* ShowDataViewController.swift */; };
+		DCED650B29DC2506005CD82E /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED650A29DC2506005CD82E /* InfoTableViewCell.swift */; };
+		DCED650D29DC343E005CD82E /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED650C29DC343E005CD82E /* resultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		DC9DA74029DBCFEC00A57C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC9DA74629DBD0A200A57C26 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DC9DA74829DBD0B100A57C26 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		DCED650829DC1ECA005CD82E /* ShowDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDataViewController.swift; sourceTree = "<group>"; };
+		DCED650A29DC2506005CD82E /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		DCED650C29DC343E005CD82E /* resultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 				DC9DA73D29DBCFEC00A57C26 /* LaunchScreen.storyboard */,
 				DC9DA74029DBCFEC00A57C26 /* Info.plist */,
 				DC6F0D5429DBF21B008ED465 /* Constants.swift */,
+				DCED650829DC1ECA005CD82E /* ShowDataViewController.swift */,
+				DCED650A29DC2506005CD82E /* InfoTableViewCell.swift */,
+				DCED650C29DC343E005CD82E /* resultViewController.swift */,
 			);
 			path = assignment_4;
 			sourceTree = "<group>";
@@ -148,11 +157,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC9DA73729DBCFEB00A57C26 /* ViewController.swift in Sources */,
+				DCED650B29DC2506005CD82E /* InfoTableViewCell.swift in Sources */,
 				DC9DA73329DBCFEB00A57C26 /* AppDelegate.swift in Sources */,
+				DCED650D29DC343E005CD82E /* resultViewController.swift in Sources */,
 				DC9DA74929DBD0B100A57C26 /* ResetPasswordViewController.swift in Sources */,
 				DC9DA74729DBD0A200A57C26 /* SignUpViewController.swift in Sources */,
 				DC9DA73529DBCFEB00A57C26 /* SceneDelegate.swift in Sources */,
 				DC6F0D5529DBF21B008ED465 /* Constants.swift in Sources */,
+				DCED650929DC1ECA005CD82E /* ShowDataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -71,7 +71,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func signInTapped(_ sender: Any) {
+        //ShowDataViewController
         
+        let resetPasswordViewController = self.storyboard?.instantiateViewController(withIdentifier: "ShowDataViewController") as! ShowDataViewController
+        self.navigationController?.pushViewController(resetPasswordViewController, animated: true)
     }
     
     
