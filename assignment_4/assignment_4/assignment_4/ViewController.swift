@@ -46,6 +46,8 @@ class ViewController: UIViewController {
         labelOr.textAlignment = .center
         
         buttonFacebook.setTitle("Sign in with Facebook", for: .normal)
+        //buttonFacebook.layer.cornerRadius = 1.0
+        //buttonFacebook.layer.borderColor = UIColor.red.cgColor
         buttonGoogle.setTitle("Sign in with Google", for: .normal)
         
         labelQuestion.text = "Don't have an account yet?"

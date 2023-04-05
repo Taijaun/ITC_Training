@@ -21,8 +21,11 @@ class ShowDataViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        
+        let cellXib = UINib(nibName: "ThirdSectionTableViewCell", bundle: nil)
+        // tableview.register(nib, forcellreuseidentifier:)
+        tableView.register(cellXib, forCellReuseIdentifier: "ThirdSectionTableViewCell")
 
-        // Do any additional setup after loading the view.
     }
     
 }
@@ -59,9 +62,9 @@ extension ShowDataViewController: UITableViewDataSource{
             return cell!
             
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell3") as? InfoTableViewCell
-            cell?.imageViewPicture.image = UIImage(systemName: "square")
-            cell?.labelName.text = weather[indexPath.row]
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ThirdSectionTableViewCell") as? ThirdSectionTableViewCell
+            cell?.imageViewCell.image = UIImage(systemName: "square")
+            cell?.labelCellTitle.text = weather[indexPath.row]
             return cell!
         }
         
@@ -78,7 +81,7 @@ extension ShowDataViewController: UITableViewDataSource{
 extension ShowDataViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let resultViewController = self.storyboard?.instantiateViewController(withIdentifier: "resultViewController") as! resultViewController
+        let resultViewController = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
         self.navigationController?.pushViewController(resultViewController, animated: true)
     }
     
