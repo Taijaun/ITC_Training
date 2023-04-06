@@ -81,8 +81,19 @@ class ViewController: UIViewController {
     }
     
     
+    // Lead to Webkit page
+    @IBAction func facebookLoginTapped(_ sender: Any) {
+        
+        let webViewController = self.storyboard?.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+        self.navigationController?.pushViewController(webViewController, animated: true)
+        
+    }
+    
+    
 
-
+    @IBAction func googleLoginTapped(_ sender: Any) {
+    }
+    
 }
 
 

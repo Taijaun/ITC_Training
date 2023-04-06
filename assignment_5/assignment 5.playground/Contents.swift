@@ -3,6 +3,7 @@ import UIKit
 // set some arrays
 var boardGames = ["Chess", "Checkers", "Monopoly", "Connect4", "Jenga"]
 var randomNumbers = [1, 2, 88, 1782, 99, 55]
+
 var i = 0
 
 
@@ -43,7 +44,7 @@ extension Int {
     }
 }
 
-print(10.isEvenOrOdd())
+print(9.isEvenOrOdd())
 
 
 //MARK: - Higher-order functions
@@ -68,3 +69,8 @@ print(filteredNumbers)
 // Reduce
 let numbersReduced = randomNumbers.reduce(0) {$0 + $1}
 print(numbersReduced)
+
+
+for i in stride(from: 10, to: 0, by: -1){
+    print(i)
+}

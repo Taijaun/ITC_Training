@@ -22,7 +22,9 @@ class ResultViewController: UIViewController {
         resultCollectionView.dataSource = self
         resultCollectionView.delegate = self
 
-        
+        // height for header
+        // title for header
+        // view for header
     }
     
 }
