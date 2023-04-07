@@ -1,0 +1,116 @@
+//
+//  TableViewController.swift
+//  assignment_7
+//
+//  Created by Taijaun Pitt on 07/04/2023.
+//
+
+import UIKit
+
+class TableViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var labelFruitName: UILabel!
+    @IBOutlet weak var labelFruitGenus: UILabel!
+    
+    let networkManager = NetworkManager()
+    
+    
+    
+    let dummyData = ["hello", "hi", "Hi2"]
+    var fruitArr = [Fruit]()
+    
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Set tableview delegate and datasource methods
+        tableView.dataSource = self
+
+        // Register table view cell
+//        let cellXib1 = UINib(nibName: "FirstTableViewCell", bundle: nil)
+//        tableView.register(cellXib1, forCellReuseIdentifier: "cell1")
+        
+        // get the api data
+        networkManager.callApi()
+        networkManager.delegate = self
+        
+    }
+    
+    
+    
+    func readJson() {
+        
+        let bundle = Bundle(for: TableViewController.self)
+        let url = bundle.url(forResource: "fileName", withExtension: "json")
+        
+        guard let url = url else {return}
+        
+        do {
+            let data = try Data(contentsOf: url)
+            let fruits = try JSONDecoder().decode([Fruit].self, from: data)
+            fruitArr = fruits
+            print(fruits)
+            
+        } catch {
+            print(error.localizedDescription)
+            
+        }
+    }
+    
+}
+
+
+//MARK: - TableView delegate/datasource methods
+
+extension TableViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return fruitArr.count
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell2") as? Cell2TableViewCell else {return UITableViewCell()}
+        cell.labelFruitName.text = "Name: \(fruitArr[indexPath.row].name)"
+        cell.labelFruitGenus.text = "Genus: \(fruitArr[indexPath.row].genus)"
+        
+        return cell
+        
+    }
+    
+    
+    
+}
+
+extension TableViewController: UITableViewDelegate {
+    
+    
+}
+
+
+//MARK: - Network protocol methods
+
+extension TableViewController: NetworkResponseProtocol {
+    
+    func didFinishWithResponseArr(array: [Fruit]) {
+        // send the array back to the network manager
+        self.fruitArr = array
+        
+        // reload the table on the main thread once the data has been retrieved
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
+    func didReceiveError(error: Error) {
+        print(error)
+    }
+    
+    
+    
+    
+    
+}

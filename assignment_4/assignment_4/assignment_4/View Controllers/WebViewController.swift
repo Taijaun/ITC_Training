@@ -22,7 +22,7 @@ class WebViewController: UIViewController {
     
 
     func loadWebPage() {
-        let url = URL(string: "www.google.co.uk/")
+        let url = URL(string: "https://www.google.co.uk/")
         guard let url = url else {return}
         let request = URLRequest(url: url)
         webView.load(request)
@@ -33,7 +33,7 @@ class WebViewController: UIViewController {
 extension WebViewController: WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        if let host = navigationAction.request.url?.host {
+        if let host = navigationAction.request.url?.absoluteString {
             if allowedPages.contains(host) {
                 decisionHandler(.allow)
                 return
