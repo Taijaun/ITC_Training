@@ -64,3 +64,21 @@ func autoClosureTest2(_ result: @autoclosure () -> Void) {
 }
 
 autoClosureTest2(print("autoClosure"))
+
+
+
+// Escaping closures
+// Good for long running tasks e.g fetching data
+
+func delayedPrint(greeting: @escaping () -> Void) {
+    print("Hello")
+    greeting()
+    print("Goodbye")
+}
+
+delayedPrint {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1){
+        print("Hello swift")
+    }
+}
+
