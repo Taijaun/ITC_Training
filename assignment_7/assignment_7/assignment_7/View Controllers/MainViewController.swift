@@ -30,14 +30,12 @@ class MainViewController: UIViewController {
         self.navigationController?.pushViewController(tableViewController, animated: true)
         
     }
-    
+
     @IBAction func collectionViewTapped(_ sender: Any) {
         
-        // Create a storyboard object
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let collectionViewController = storyboard.instantiateViewController(withIdentifier: "CollectionViewController")
-        self.navigationController?.pushViewController(collectionViewController, animated: true)
-        
+        let collectionVC = storyboard.instantiateViewController(identifier: "CollectionViewController")
+        self.navigationController?.pushViewController(collectionVC, animated: true)
     }
     
 

@@ -16,7 +16,6 @@ class TableViewController: UIViewController {
     let networkManager = NetworkManager()
     
     
-    
     let dummyData = ["hello", "hi", "Hi2"]
     var fruitArr = [Fruit]()
     
@@ -27,10 +26,11 @@ class TableViewController: UIViewController {
         
         // Set tableview delegate and datasource methods
         tableView.dataSource = self
+        tableView.delegate = self
 
         // Register table view cell
-//        let cellXib1 = UINib(nibName: "FirstTableViewCell", bundle: nil)
-//        tableView.register(cellXib1, forCellReuseIdentifier: "cell1")
+        //let cellXib1 = UINib(nibName: "FirstTableViewCell", bundle: nil)
+        //tableView.register(cellXib1, forCellReuseIdentifier: "cell1")
         
         // get the api data
         networkManager.callApi()
@@ -87,6 +87,17 @@ extension TableViewController: UITableViewDataSource {
 
 extension TableViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        guard let detailsViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else {return}
+        let fruit = fruitArr[indexPath.row]
+        detailsViewController.fruit = fruit
+        
+        
+        self.navigationController?.pushViewController(detailsViewController, animated: true)
+        
+    }
+    
     
 }
 
@@ -95,10 +106,10 @@ extension TableViewController: UITableViewDelegate {
 
 extension TableViewController: NetworkResponseProtocol {
     
+    // Get the parsed data array from network manager and display it
     func didFinishWithResponseArr(array: [Fruit]) {
-        // send the array back to the network manager
+        // get the array from the network manager and assign it to the array in the VC
         self.fruitArr = array
-        
         // reload the table on the main thread once the data has been retrieved
         DispatchQueue.main.async {
             self.tableView.reloadData()
@@ -109,8 +120,7 @@ extension TableViewController: NetworkResponseProtocol {
         print(error)
     }
     
-    
-    
-    
-    
 }
+
+
+

@@ -27,9 +27,11 @@ class NetworkManager {
         // URLSessionDelegate {protocol} (provides methods for updates/errors/background tasks)
         
         /*
+         
             1. Data task - API Fetching
             2. Upload task - Uploading to server
             3. Download task - Download files from a server
+         
          */
         
         // Create a URLSession
@@ -72,6 +74,56 @@ class NetworkManager {
         
         // (starts the task)
         task.resume()
+    }
+    
+    
+    func getDataWithClosure(handler: @escaping (Result<[Fruit], Error>) -> Void){
+
+        let urlString = "https://fruityvice.com/api/fruit/all"
+        let url = URL(string: urlString)
+        guard let url = url else {return}
+        
+        
+        let session = URLSession.shared
+        
+        
+        let task = session.dataTask(with: url) { data, response, error in
+            
+            // If there is an error show it
+            if let error = error {
+                print(error.localizedDescription)
+                handler(.failure(error))
+                return
+            }
+            
+            // Check status code
+            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else{
+                print("HTTP Error")
+                return
+            }
+            
+            // Check the downloaded data
+            guard let data = data else{
+                print("Couldn't get data from API")
+                return
+            }
+            
+            
+            // Parse the data with JSONDecoder object
+            do {
+                let fruits = try JSONDecoder().decode([Fruit].self, from: data)
+                handler(.success(fruits))
+                
+            } catch {
+                print(error.localizedDescription)
+            }
+            
+            
+        }
+        
+        // (starts the task)
+        task.resume()
+        
     }
     
 }

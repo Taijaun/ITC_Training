@@ -9,8 +9,10 @@ import Foundation
 
 protocol NetworkResponseProtocol{
     
+    
     func didFinishWithResponseArr(array: [Fruit])
     func didReceiveError(error: Error)
     
     
 }
+

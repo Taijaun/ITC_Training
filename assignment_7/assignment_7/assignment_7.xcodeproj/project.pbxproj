@@ -22,6 +22,7 @@
 		DC67505829E07A7C0036CE94 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67505729E07A7C0036CE94 /* NetworkManager.swift */; };
 		DC67505A29E085470036CE94 /* Cell2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67505929E085470036CE94 /* Cell2TableViewCell.swift */; };
 		DC67505D29E09DC40036CE94 /* NetworkResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67505C29E09DC40036CE94 /* NetworkResponseProtocol.swift */; };
+		DC67506129E1A6E30036CE94 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67506029E1A6E30036CE94 /* MainCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		DC67505729E07A7C0036CE94 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DC67505929E085470036CE94 /* Cell2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell2TableViewCell.swift; sourceTree = "<group>"; };
 		DC67505C29E09DC40036CE94 /* NetworkResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseProtocol.swift; sourceTree = "<group>"; };
+		DC67506029E1A6E30036CE94 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				DC46E87629E0611500DB3725 /* View Controllers */,
 				DC46E86929E0603700DB3725 /* Assets.xcassets */,
 				DC46E86E29E0603700DB3725 /* Info.plist */,
+				DC67506029E1A6E30036CE94 /* MainCollectionViewCell.swift */,
 			);
 			path = assignment_7;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				DC46E86129E0603600DB3725 /* AppDelegate.swift in Sources */,
 				DC46E86329E0603600DB3725 /* SceneDelegate.swift in Sources */,
 				DC46E87829E0614300DB3725 /* TableViewController.swift in Sources */,
+				DC67506129E1A6E30036CE94 /* MainCollectionViewCell.swift in Sources */,
 				DC46E88029E0671100DB3725 /* Fruit.swift in Sources */,
 				DC46E87A29E0616500DB3725 /* CollectionViewController.swift in Sources */,
 				DC46E88429E0687900DB3725 /* FirstTableViewCell.swift in Sources */,
