@@ -33,7 +33,7 @@ class CollectionViewController: UIViewController {
             switch result {
                 
             case .success(let fruits):
-                
+                // set the array passed from the network manager to the local fruitArr
                 self.fruitArr = fruits
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
@@ -104,6 +104,7 @@ extension CollectionViewController: NetworkResponseProtocol {
     }
     
 }
+
 
 
 

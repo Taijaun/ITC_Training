@@ -53,9 +53,7 @@ func autoclosureTest(_ result: () -> Void ){
     
 }
 
-autoclosureTest {
-    print("Closure called")
-}
+autoclosureTest {print("Closure called")}
 
 func autoClosureTest2(_ result: @autoclosure () -> Void) {
     print("Before")
@@ -78,7 +76,7 @@ func delayedPrint(greeting: @escaping () -> Void) {
 
 // Add a delay
 delayedPrint {
-    DispatchQueue.main.asyncAfter(deadline: .now() + 1){
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2){
         print("Hello swift")
     }
 }

@@ -9,15 +9,16 @@ import Foundation
 
 class NetworkManager {
     
+    let urlString = "https://fruityvice.com/api/fruit/all"
+    
     // Create a delegate property so that the VC can call the method
     var delegate: NetworkResponseProtocol?
     
     func callApi() {
         
         // Save the API endpoint as a string
-        let urlString = "https://fruityvice.com/api/fruit/all"
         // assign it as the value of a URL Object
-        let url = URL(string: urlString)
+        let url = URL(string: self.urlString)
         // Unwrap the URL
         guard let url = url else {return}
         
@@ -80,8 +81,7 @@ class NetworkManager {
     
     func getDataWithClosure(handler: @escaping (Result<[Fruit], Error>) -> Void){
 
-        let urlString = "https://fruityvice.com/api/fruit/all"
-        let url = URL(string: urlString)
+        let url = URL(string: self.urlString)
         guard let url = url else {return}
         
         
@@ -113,6 +113,7 @@ class NetworkManager {
             // Parse the data with JSONDecoder object
             do {
                 let fruits = try JSONDecoder().decode([Fruit].self, from: data)
+                // Pass the parsed fruits array if successful
                 handler(.success(fruits))
                 
             } catch {
@@ -127,4 +128,7 @@ class NetworkManager {
         
     }
     
+    
 }
+
+
