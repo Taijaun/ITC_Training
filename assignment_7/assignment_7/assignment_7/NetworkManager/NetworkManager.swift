@@ -63,6 +63,7 @@ class NetworkManager {
             // Parse the data with JSONDecoder object
             do {
                 let fruits = try JSONDecoder().decode([Fruit].self, from: data)
+                // Pass the parsed data to the delegate (tableVC)
                 self.delegate?.didFinishWithResponseArr(array: fruits)
                 
             } catch {

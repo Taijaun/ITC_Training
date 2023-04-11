@@ -76,6 +76,7 @@ func delayedPrint(greeting: @escaping () -> Void) {
     print("Goodbye")
 }
 
+// Add a delay
 delayedPrint {
     DispatchQueue.main.asyncAfter(deadline: .now() + 1){
         print("Hello swift")
