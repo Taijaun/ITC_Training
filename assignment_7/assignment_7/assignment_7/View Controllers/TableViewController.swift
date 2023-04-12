@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class TableViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -18,6 +20,7 @@ class TableViewController: UIViewController {
     
     let dummyData = ["hello", "hi", "Hi2"]
     var fruitArr = [Fruit]()
+    
     
     
 
@@ -36,7 +39,10 @@ class TableViewController: UIViewController {
         networkManager.callApi()
         networkManager.delegate = self
         
+        
     }
+
+    
     
     
     
@@ -59,6 +65,12 @@ class TableViewController: UIViewController {
         }
     }
     
+    
+    
+    
+    
+    
+    
 }
 
 
@@ -77,6 +89,19 @@ extension TableViewController: UITableViewDataSource {
         cell.labelFruitName.text = "Name: \(fruitArr[indexPath.row].name)"
         cell.labelFruitGenus.text = "Genus: \(fruitArr[indexPath.row].genus)"
         
+        // set the tag property to be able to navigate on click with protocol/delegate
+        cell.delegate = self
+        cell.tag = indexPath.row
+        
+        // Navigate with button click using closure
+        cell.collectionClicked = {
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            guard let detailsVC = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else {return}
+            detailsVC.fruit = self.fruitArr[indexPath.row]
+            print(detailsVC.fruit)
+            self.navigationController?.pushViewController(detailsVC, animated: true)
+            
+        }
         return cell
         
     }
@@ -122,5 +147,29 @@ extension TableViewController: NetworkResponseProtocol {
     
 }
 
+//MARK: - button delegate methods
 
+extension TableViewController: tableCellDelegate{
+    // push to detailVC using Protocol/delegate to pass info
+    func detailButtonClicked(index: Int) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let detailsVC = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else {return}
+        detailsVC.fruit = fruitArr[index]
+        self.navigationController?.pushViewController(detailsVC, animated: true)
+        
+    }
+
+    
+    // Navigate to collection view using closure
+    func collectionButtonClicked() {
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+}
 

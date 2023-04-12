@@ -14,12 +14,27 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var buttonCollectionView: UIButton!
     
-
+    @IBOutlet weak var textInfoSendToSegue: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
     }
+    
+    // pass info via segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let sendText = textInfoSendToSegue.text else {return}
+        
+        if segue.identifier == "StoryBoardSegue" {
+            let segueVC = segue.destination as? DisplaySegueInfoViewController
+            segueVC?.receivedInfo = sendText
+        } else if segue.identifier == "2ndSegue" {
+            let segue2VC = segue.destination as? DisplaySegueInfoViewController
+            segue2VC?.receivedInfo = sendText
+            }
+        }
+    
     
     
     @IBAction func tableViewTapped(_ sender: Any) {
@@ -38,5 +53,14 @@ class MainViewController: UIViewController {
         self.navigationController?.pushViewController(collectionVC, animated: true)
     }
     
+    
+    @IBAction func programmaticSegueTapped(_ sender: Any) {
+        
+        // perform the segue that wasnt directly connected through the button
+        performSegue(withIdentifier: "2ndSegue", sender: sender)
+    }
+    
+    
 
 }
+

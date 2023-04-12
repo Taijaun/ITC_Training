@@ -23,6 +23,7 @@
 		DC67505A29E085470036CE94 /* Cell2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67505929E085470036CE94 /* Cell2TableViewCell.swift */; };
 		DC67505D29E09DC40036CE94 /* NetworkResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67505C29E09DC40036CE94 /* NetworkResponseProtocol.swift */; };
 		DC67506129E1A6E30036CE94 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67506029E1A6E30036CE94 /* MainCollectionViewCell.swift */; };
+		DCAD0EB729E6B06E0052D644 /* DisplaySegueInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD0EB629E6B06E0052D644 /* DisplaySegueInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		DC67505929E085470036CE94 /* Cell2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell2TableViewCell.swift; sourceTree = "<group>"; };
 		DC67505C29E09DC40036CE94 /* NetworkResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseProtocol.swift; sourceTree = "<group>"; };
 		DC67506029E1A6E30036CE94 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		DCAD0EB629E6B06E0052D644 /* DisplaySegueInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySegueInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				DC46E87B29E0616F00DB3725 /* DetailsViewController.swift */,
 				DC46E88229E0687900DB3725 /* FirstTableViewCell.swift */,
 				DC67505929E085470036CE94 /* Cell2TableViewCell.swift */,
+				DCAD0EB629E6B06E0052D644 /* DisplaySegueInfoViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				DC67505D29E09DC40036CE94 /* NetworkResponseProtocol.swift in Sources */,
 				DC67505829E07A7C0036CE94 /* NetworkManager.swift in Sources */,
 				DC46E87E29E0649F00DB3725 /* MainViewController.swift in Sources */,
+				DCAD0EB729E6B06E0052D644 /* DisplaySegueInfoViewController.swift in Sources */,
 				DC46E86129E0603600DB3725 /* AppDelegate.swift in Sources */,
 				DC46E86329E0603600DB3725 /* SceneDelegate.swift in Sources */,
 				DC46E87829E0614300DB3725 /* TableViewController.swift in Sources */,

@@ -7,12 +7,21 @@
 
 import UIKit
 
+protocol tableCellDelegate {
+    func collectionButtonClicked()
+    func detailButtonClicked(index: Int)
+}
+
+
 class Cell2TableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var labelFruitName: UILabel!
     
     @IBOutlet weak var labelFruitGenus: UILabel!
+    
+    var delegate: tableCellDelegate?
+    var collectionClicked: (() -> Void)?
     
 
     override func awakeFromNib() {
@@ -26,12 +35,20 @@ class Cell2TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    
-    @IBAction func printDetailsTapped(_ sender: Any) {
-        
-        print("Hello")
-        
+
+    @IBAction func collectionTapped(_ sender: Any) {
+        print("CollectionTapped")
+        self.collectionClicked?()
     }
     
+    
+    @IBAction func detailViewTapped(_ sender: Any) {
+        print("DetailTapped")
+        delegate?.detailButtonClicked(index: self.tag)
+    }
+    
+    
+    
+   
     
 }
