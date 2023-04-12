@@ -52,7 +52,7 @@
                                                         <constraint firstAttribute="height" constant="35" id="PpN-lB-YkB"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="filled" title="CollectionView">
+                                                    <buttonConfiguration key="configuration" style="filled" title="Closure">
                                                         <fontDescription key="titleFontDescription" type="system" pointSize="9"/>
                                                     </buttonConfiguration>
                                                     <connections>
@@ -65,7 +65,7 @@
                                                         <constraint firstAttribute="height" constant="35" id="SSF-Z2-HWx"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="filled" title="DetailView">
+                                                    <buttonConfiguration key="configuration" style="filled" title="Delegate">
                                                         <fontDescription key="titleFontDescription" type="system" pointSize="9"/>
                                                     </buttonConfiguration>
                                                     <connections>

@@ -33,6 +33,7 @@ class MainViewController: UIViewController {
             let segue2VC = segue.destination as? DisplaySegueInfoViewController
             segue2VC?.receivedInfo = sendText
             }
+        
         }
     
     

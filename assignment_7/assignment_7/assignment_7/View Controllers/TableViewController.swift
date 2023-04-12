@@ -100,8 +100,8 @@ extension TableViewController: UITableViewDataSource {
             detailsVC.fruit = self.fruitArr[indexPath.row]
             print(detailsVC.fruit)
             self.navigationController?.pushViewController(detailsVC, animated: true)
-            
         }
+        
         return cell
         
     }
@@ -160,10 +160,7 @@ extension TableViewController: tableCellDelegate{
     }
 
     
-    // Navigate to collection view using closure
-    func collectionButtonClicked() {
-        
-    }
+    
     
     
     

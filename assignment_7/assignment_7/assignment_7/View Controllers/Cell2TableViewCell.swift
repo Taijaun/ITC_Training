@@ -8,7 +8,6 @@
 import UIKit
 
 protocol tableCellDelegate {
-    func collectionButtonClicked()
     func detailButtonClicked(index: Int)
 }
 
