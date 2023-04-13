@@ -20,6 +20,10 @@
 		DCF695DF29E7ECE900BA4CD0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF695DE29E7ECE900BA4CD0 /* DetailViewController.swift */; };
 		DCF695E229E7EFC700BA4CD0 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF695E029E7EFC700BA4CD0 /* FirstTableViewCell.swift */; };
 		DCF695E329E7EFC700BA4CD0 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCF695E129E7EFC700BA4CD0 /* FirstTableViewCell.xib */; };
+		DCF695E729E7F45B00BA4CD0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF695E629E7F45B00BA4CD0 /* NetworkManager.swift */; };
+		DCF695E929E7F57100BA4CD0 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF695E829E7F57100BA4CD0 /* Fruit.swift */; };
+		DCF695EB29E7F7C200BA4CD0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF695EA29E7F7C200BA4CD0 /* LoginViewModel.swift */; };
+		DCF695ED29E8000600BA4CD0 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF695EC29E8000600BA4CD0 /* TableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		DCF695DE29E7ECE900BA4CD0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DCF695E029E7EFC700BA4CD0 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		DCF695E129E7EFC700BA4CD0 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
+		DCF695E629E7F45B00BA4CD0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DCF695E829E7F57100BA4CD0 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		DCF695EA29E7F7C200BA4CD0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DCF695EC29E8000600BA4CD0 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,7 @@
 				DCF695B229E7EBD700BA4CD0 /* LaunchScreen.storyboard */,
 				DCF695B029E7EBD700BA4CD0 /* Assets.xcassets */,
 				DCF695B529E7EBD700BA4CD0 /* Info.plist */,
+				DCF695E529E7F44700BA4CD0 /* Services */,
 				DCF695D729E7EC1500BA4CD0 /* Model */,
 				DCF695D929E7EC2600BA4CD0 /* Views */,
 				DCF695D829E7EC1B00BA4CD0 /* ViewModels */,
@@ -141,6 +150,7 @@
 		DCF695D729E7EC1500BA4CD0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DCF695E829E7F57100BA4CD0 /* Fruit.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +158,8 @@
 		DCF695D829E7EC1B00BA4CD0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DCF695EA29E7F7C200BA4CD0 /* LoginViewModel.swift */,
+				DCF695EC29E8000600BA4CD0 /* TableViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -169,6 +181,14 @@
 				DCF695E129E7EFC700BA4CD0 /* FirstTableViewCell.xib */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		DCF695E529E7F44700BA4CD0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DCF695E629E7F45B00BA4CD0 /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,12 +323,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF695E929E7F57100BA4CD0 /* Fruit.swift in Sources */,
+				DCF695ED29E8000600BA4CD0 /* TableViewModel.swift in Sources */,
 				DCF695E229E7EFC700BA4CD0 /* FirstTableViewCell.swift in Sources */,
 				DCF695DB29E7EC7F00BA4CD0 /* LoginViewController.swift in Sources */,
 				DCF695A829E7EBD600BA4CD0 /* AppDelegate.swift in Sources */,
+				DCF695E729E7F45B00BA4CD0 /* NetworkManager.swift in Sources */,
 				DCF695DF29E7ECE900BA4CD0 /* DetailViewController.swift in Sources */,
 				DCF695AA29E7EBD600BA4CD0 /* SceneDelegate.swift in Sources */,
 				DCF695DD29E7ECC700BA4CD0 /* tableViewController.swift in Sources */,
+				DCF695EB29E7F7C200BA4CD0 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
