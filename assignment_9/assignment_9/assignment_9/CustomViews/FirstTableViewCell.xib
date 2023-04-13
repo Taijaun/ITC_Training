@@ -36,7 +36,7 @@
                 <constraints>
                     <constraint firstItem="gC7-m6-Wb2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="0Dl-x0-vHl"/>
                     <constraint firstItem="Hpy-bj-sMd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="2n1-7Q-5aa"/>
-                    <constraint firstItem="Hpy-bj-sMd" firstAttribute="leading" secondItem="gC7-m6-Wb2" secondAttribute="trailing" constant="100" id="CcU-VZ-yYe"/>
+                    <constraint firstAttribute="trailing" secondItem="Hpy-bj-sMd" secondAttribute="trailing" constant="15" id="CoH-3I-qcH"/>
                     <constraint firstAttribute="bottom" secondItem="Hpy-bj-sMd" secondAttribute="bottom" constant="35" id="Dnq-pz-KwY"/>
                     <constraint firstAttribute="bottom" secondItem="gC7-m6-Wb2" secondAttribute="bottom" constant="35" id="ZCQ-Yd-T1R"/>
                     <constraint firstItem="gC7-m6-Wb2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="wP0-xg-COB"/>
