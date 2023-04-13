@@ -51,6 +51,14 @@ extension tableViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell1") as? FirstTableViewCell else {return UITableViewCell()}
         cell.labelFruitName.text = tableViewModel.fruitList[indexPath.row].name
+        
+        // Closure that handles the button click action
+        cell.detailsClicked = {
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            guard let detailVC = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {return}
+            detailVC.fruit = self.tableViewModel.fruitList[indexPath.row]
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
         return cell
         
         

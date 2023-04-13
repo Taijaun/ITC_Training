@@ -102,13 +102,32 @@
         <!--Detail View Controller-->
         <scene sceneID="9EA-Up-rT3">
             <objects>
-                <viewController id="Pma-h3-cop" customClass="DetailViewController" customModule="assignment_9" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pma-h3-cop" customClass="DetailViewController" customModule="assignment_9" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FdV-EI-cqk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXi-Mq-F4D">
+                                <rect key="frame" x="50" y="109" width="293" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="zXQ-6m-xSr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8Op-UE-3kf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Op-UE-3kf" firstAttribute="trailing" secondItem="DXi-Mq-F4D" secondAttribute="trailing" constant="50" id="i7O-k4-eXp"/>
+                            <constraint firstItem="DXi-Mq-F4D" firstAttribute="leading" secondItem="8Op-UE-3kf" secondAttribute="leading" constant="50" id="t5f-aK-SMT"/>
+                            <constraint firstItem="DXi-Mq-F4D" firstAttribute="top" secondItem="8Op-UE-3kf" secondAttribute="top" constant="50" id="tE2-W8-SeD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelFruitName" destination="DXi-Mq-F4D" id="cFg-ks-Yhz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1L3-Lc-alv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
