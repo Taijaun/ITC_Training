@@ -38,7 +38,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRE-wT-Nw9">
-                                                    <rect key="frame" x="35" y="63" width="238" height="20"/>
+                                                    <rect key="frame" x="35" y="63" width="49" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="jd1-Bh-R4K"/>
                                                     </constraints>
@@ -60,7 +60,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbW-pi-1j3">
-                                                    <rect key="frame" x="278" y="71" width="95" height="35"/>
+                                                    <rect key="frame" x="309.66666666666669" y="71" width="63.333333333333314" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="SSF-Z2-HWx"/>
                                                     </constraints>
@@ -75,16 +75,16 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="nbW-pi-1j3" secondAttribute="trailing" id="9gZ-ex-hAx"/>
-                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="iRE-wT-Nw9" secondAttribute="trailing" constant="100" id="Avm-Yd-P2T"/>
                                                 <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="rKP-56-MfC" secondAttribute="trailing" constant="100" id="DYR-2E-S0d"/>
                                                 <constraint firstItem="rKP-56-MfC" firstAttribute="top" secondItem="ExI-Wc-BS7" secondAttribute="topMargin" constant="15" id="Fsd-oa-n81"/>
                                                 <constraint firstItem="Pp5-Qi-4bC" firstAttribute="top" secondItem="ExI-Wc-BS7" secondAttribute="topMargin" constant="15" id="Fuj-j3-6eg"/>
-                                                <constraint firstItem="nbW-pi-1j3" firstAttribute="leading" secondItem="iRE-wT-Nw9" secondAttribute="trailing" constant="5" id="J1p-WI-0Nr"/>
                                                 <constraint firstItem="Pp5-Qi-4bC" firstAttribute="trailing" secondItem="ExI-Wc-BS7" secondAttribute="trailingMargin" id="Kxo-4f-k7i"/>
+                                                <constraint firstItem="nbW-pi-1j3" firstAttribute="leading" secondItem="iRE-wT-Nw9" secondAttribute="trailing" constant="100" id="Nkz-rD-M6b"/>
                                                 <constraint firstItem="Pp5-Qi-4bC" firstAttribute="leading" secondItem="rKP-56-MfC" secondAttribute="trailing" constant="5" id="Yic-L1-2ca"/>
                                                 <constraint firstItem="iRE-wT-Nw9" firstAttribute="top" secondItem="rKP-56-MfC" secondAttribute="bottom" constant="15" id="dho-QY-PwB"/>
                                                 <constraint firstItem="rKP-56-MfC" firstAttribute="leading" secondItem="ExI-Wc-BS7" secondAttribute="leadingMargin" constant="15" id="gcj-Dl-GsN"/>
                                                 <constraint firstItem="iRE-wT-Nw9" firstAttribute="leading" secondItem="ExI-Wc-BS7" secondAttribute="leadingMargin" constant="15" id="lF8-3z-DB3"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="nbW-pi-1j3" secondAttribute="bottom" constant="3" id="pQd-vj-Aac"/>
                                                 <constraint firstItem="nbW-pi-1j3" firstAttribute="top" secondItem="Pp5-Qi-4bC" secondAttribute="bottom" constant="10" id="w08-Lj-g56"/>
                                             </constraints>
                                         </tableViewCellContentView>

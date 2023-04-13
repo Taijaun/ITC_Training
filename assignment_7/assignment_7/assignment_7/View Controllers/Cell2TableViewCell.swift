@@ -8,7 +8,7 @@
 import UIKit
 
 protocol tableCellDelegate {
-    func detailButtonClicked(index: Int)
+    func delegateButtonClicked(index: Int)
 }
 
 
@@ -43,7 +43,7 @@ class Cell2TableViewCell: UITableViewCell {
     
     @IBAction func detailViewTapped(_ sender: Any) {
         print("DetailTapped")
-        delegate?.detailButtonClicked(index: self.tag)
+        delegate?.delegateButtonClicked(index: self.tag)
     }
     
     

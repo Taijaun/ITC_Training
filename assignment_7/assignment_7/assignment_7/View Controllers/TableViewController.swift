@@ -151,7 +151,7 @@ extension TableViewController: NetworkResponseProtocol {
 
 extension TableViewController: tableCellDelegate{
     // push to detailVC using Protocol/delegate to pass info
-    func detailButtonClicked(index: Int) {
+    func delegateButtonClicked(index: Int) {
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         guard let detailsVC = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else {return}
         detailsVC.fruit = fruitArr[index]
