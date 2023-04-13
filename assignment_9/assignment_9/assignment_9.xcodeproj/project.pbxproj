@@ -24,6 +24,7 @@
 		DCF695E929E7F57100BA4CD0 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF695E829E7F57100BA4CD0 /* Fruit.swift */; };
 		DCF695EB29E7F7C200BA4CD0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF695EA29E7F7C200BA4CD0 /* LoginViewModel.swift */; };
 		DCF695ED29E8000600BA4CD0 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF695EC29E8000600BA4CD0 /* TableViewModel.swift */; };
+		DCF695EF29E813F800BA4CD0 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF695EE29E813F800BA4CD0 /* LoginViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		DCF695E829E7F57100BA4CD0 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		DCF695EA29E7F7C200BA4CD0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DCF695EC29E8000600BA4CD0 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		DCF695EE29E813F800BA4CD0 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				DCF695BE29E7EBD700BA4CD0 /* assignment_9Tests.swift */,
+				DCF695EE29E813F800BA4CD0 /* LoginViewModelTests.swift */,
 			);
 			path = assignment_9Tests;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF695EF29E813F800BA4CD0 /* LoginViewModelTests.swift in Sources */,
 				DCF695BF29E7EBD700BA4CD0 /* assignment_9Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
