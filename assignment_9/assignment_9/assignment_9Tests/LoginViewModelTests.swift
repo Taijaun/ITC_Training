@@ -10,14 +10,16 @@ import XCTest
 
 final class LoginViewModelTests: XCTestCase {
     
-    var loginViewModel = LoginViewModel()
+    var loginViewModel : LoginViewModel!
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        loginViewModel = LoginViewModel()
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        loginViewModel = nil
     }
     
     // Should be true

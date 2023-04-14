@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GgH-Eg-y8F">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="jEo-SR-ftD">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="1iH-N5-Zqs" customClass="LoginViewController" customModule="assignment10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mSZ-2r-Fza">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqY-Gb-fyC">
+                                <rect key="frame" x="35" y="403" width="323" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aJ6-Ei-uv2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="signUpTapped:" destination="1iH-N5-Zqs" eventType="touchUpInside" id="rVf-9u-nFt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MCf-ks-PWP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MCf-ks-PWP" firstAttribute="trailing" secondItem="YqY-Gb-fyC" secondAttribute="trailing" constant="35" id="X73-7E-hUH"/>
+                            <constraint firstItem="YqY-Gb-fyC" firstAttribute="leading" secondItem="MCf-ks-PWP" secondAttribute="leading" constant="35" id="gfS-78-UxI"/>
+                            <constraint firstItem="YqY-Gb-fyC" firstAttribute="top" secondItem="MCf-ks-PWP" secondAttribute="top" constant="300" id="xi5-rc-ij4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="T6g-na-IdK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7YC-SP-9xE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-776.33587786259534" y="736.61971830985919"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="mXv-Rc-drB">
+            <objects>
+                <viewController storyboardIdentifier="FeatureTwoViewController" id="m7V-w3-SOx" customClass="HomePageViewController" customModule="assignment10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7uY-Sm-h8I">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hLR-jK-bkB"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="ZHL-Jw-t1s"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTK-BS-RvF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="83.206106870229007" y="736.61971830985919"/>
+        </scene>
+        <!--Feature Three View Controller-->
+        <scene sceneID="C4b-Ci-uMy">
+            <objects>
+                <viewController storyboardIdentifier="FeatureThreeViewController" id="kmn-yI-oQ1" customClass="FeatureThreeViewController" customModule="assignment10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NQN-4I-MW1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="phg-li-cGd"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" selectedImage="clipboard.fill" catalog="system" systemItem="search" id="3x8-s4-vXO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5XK-tn-lFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927.48091603053433" y="736.61971830985919"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="DIJ-kY-z1v">
+            <objects>
+                <viewController storyboardIdentifier="FeatureFourViewController" id="EeP-AY-nse" customClass="FeatureFourViewController" customModule="assignment10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QeU-If-z6L">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GtA-Mu-ve8"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="ZaQ-Sr-5g0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cG-oK-iiq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1779.3893129770991" y="736.61971830985919"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Uwr-rC-OO2">
+            <objects>
+                <viewController storyboardIdentifier="FeatureFiveViewController" id="WMi-yX-4R9" customClass="FeatureFiveViewController" customModule="assignment10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X96-D4-PSY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="goJ-lW-oea"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.2.fill" catalog="system" id="3iR-5B-sOC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nz-Mg-hpt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2568.7022900763359" y="736.61971830985919"/>
+        </scene>
+        <!--Call-->
+        <scene sceneID="C7Y-cc-Ggz">
+            <objects>
+                <viewController id="hkM-ex-0D6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tj6-zo-VQW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="X2s-xN-wvh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Call" image="phone.fill" catalog="system" id="jna-oU-bd7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ap6-Ip-iZW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3382" y="737"/>
+        </scene>
+        <!--Custom Tab Bar Controller View Controller-->
+        <scene sceneID="H79-Qf-A6h">
+            <objects>
+                <tabBarController storyboardIdentifier="CustomTabBarControllerViewController" automaticallyAdjustsScrollViewInsets="NO" id="GgH-Eg-y8F" customClass="CustomTabBarControllerViewController" customModule="assignment10" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VfM-25-7KI">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="AccentColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="eZR-VC-hB8" kind="relationship" relationship="viewControllers" id="M2d-Xt-idn"/>
+                        <segue destination="m7V-w3-SOx" kind="relationship" relationship="viewControllers" id="xld-84-e8O"/>
+                        <segue destination="kmn-yI-oQ1" kind="relationship" relationship="viewControllers" id="q1a-qI-59d"/>
+                        <segue destination="EeP-AY-nse" kind="relationship" relationship="viewControllers" id="jRi-MK-0BD"/>
+                        <segue destination="WMi-yX-4R9" kind="relationship" relationship="viewControllers" id="sfe-9F-dD4"/>
+                        <segue destination="hkM-ex-0D6" kind="relationship" relationship="viewControllers" id="0yl-5O-cya"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHP-g4-UXg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.76335877862595414" y="4.9295774647887329"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="cTc-25-Cf4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eZR-VC-hB8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Login" image="pencil" catalog="system" selectedImage="pencil" id="FeI-tN-8FC"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PO4-sv-OHq">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1iH-N5-Zqs" kind="relationship" relationship="rootViewController" id="GkU-oT-iGn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecU-ji-5Bi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1703.0534351145038" y="736.61971830985919"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clipboard.fill" catalog="system" width="103" height="128"/>
+        <image name="gearshape.2.fill" catalog="system" width="128" height="101"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

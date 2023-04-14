@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
             let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let tableVC = storyboard.instantiateViewController(withIdentifier: "tableViewController")
             self.navigationController?.pushViewController(tableVC, animated: true)
-        }
+        } 
     }
     
 

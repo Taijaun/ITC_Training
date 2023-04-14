@@ -127,7 +127,6 @@
 				DCF695D729E7EC1500BA4CD0 /* Model */,
 				DCF695D929E7EC2600BA4CD0 /* Views */,
 				DCF695D829E7EC1B00BA4CD0 /* ViewModels */,
-				DCF695E429E7EFD500BA4CD0 /* CustomViews */,
 			);
 			path = assignment_9;
 			sourceTree = "<group>";
@@ -170,6 +169,7 @@
 		DCF695D929E7EC2600BA4CD0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DCF695E429E7EFD500BA4CD0 /* CustomViews */,
 				DCF695DA29E7EC7F00BA4CD0 /* LoginViewController.swift */,
 				DCF695DC29E7ECC700BA4CD0 /* tableViewController.swift */,
 				DCF695DE29E7ECE900BA4CD0 /* DetailViewController.swift */,
