@@ -13,7 +13,7 @@ class tableViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
-    let tableViewModel = TableViewModel()
+    let tableViewModel = TableViewModel(manager: NetworkManager())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class tableViewController: UIViewController {
             }
         }
         
-        tableViewModel.getDataWithClosure()
+        tableViewModel.getDataWithClosure(urlString: "https://fruityvice.com/api/fruit/all")
         
 
         

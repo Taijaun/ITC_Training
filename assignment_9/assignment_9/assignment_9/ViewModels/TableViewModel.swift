@@ -9,12 +9,16 @@ import Foundation
 
 class TableViewModel{
     
-    let networkManager = NetworkManager()
+    let manager: NetworkAble
     var fruitList = [Fruit]()
     var reloadView: (() -> Void)?
     
-    func getDataWithClosure() {
-        networkManager.callApiWithClosure { result in
+    init(manager: NetworkAble) {
+        self.manager = manager
+    }
+    
+    func getDataWithClosure(urlString: String) {
+        manager.callApiWithClosure(urlString: urlString, type: [Fruit].self ) { result in
             switch result {
                 
             case .success(let fruits):

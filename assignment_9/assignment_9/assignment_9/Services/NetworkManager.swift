@@ -7,16 +7,14 @@
 
 import Foundation
 
-class NetworkManager {
+class NetworkManager: NetworkAble {
     
-    let urlString = "https://fruityvice.com/api/fruit/all"
-    
-    func callApiWithClosure(handler: @escaping (Result<[Fruit], Error>) -> Void) {
+    func callApiWithClosure<T:Decodable>(urlString: String, type: T.Type, handler: @escaping (Result<T, Error>) -> Void) {
         
         // get the url
-        let url = URL(string: self.urlString)
+        let url = URL(string: urlString)
         
-        guard let url = url else {return}
+        guard let url = url else { return }
         
         // Create a session Object
         let session = URLSession.shared
@@ -46,7 +44,7 @@ class NetworkManager {
             // Parse the data with JSON Decoder
             
             do {
-                let fruits = try JSONDecoder().decode([Fruit].self, from: data)
+                let fruits = try JSONDecoder().decode(type.self, from: data)
                 // Pass the array
                 handler(.success(fruits))
             } catch {

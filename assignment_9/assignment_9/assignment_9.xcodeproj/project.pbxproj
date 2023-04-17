@@ -25,6 +25,11 @@
 		DCF695EB29E7F7C200BA4CD0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF695EA29E7F7C200BA4CD0 /* LoginViewModel.swift */; };
 		DCF695ED29E8000600BA4CD0 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF695EC29E8000600BA4CD0 /* TableViewModel.swift */; };
 		DCF695EF29E813F800BA4CD0 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF695EE29E813F800BA4CD0 /* LoginViewModelTests.swift */; };
+		DCF6964229ED328B00BA4CD0 /* NetworkableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF6964129ED328B00BA4CD0 /* NetworkableProtocol.swift */; };
+		DCF6964429ED37FA00BA4CD0 /* FakeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF6964329ED37FA00BA4CD0 /* FakeNetworkManager.swift */; };
+		DCF6964829ED3D0000BA4CD0 /* fruits.json in Resources */ = {isa = PBXBuildFile; fileRef = DCF6964729ED3D0000BA4CD0 /* fruits.json */; };
+		DCF6964A29ED3D3000BA4CD0 /* ApiTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF6964929ED3D3000BA4CD0 /* ApiTestModel.swift */; };
+		DCF6964C29ED430B00BA4CD0 /* ListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF6964B29ED430B00BA4CD0 /* ListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		DCF695EA29E7F7C200BA4CD0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DCF695EC29E8000600BA4CD0 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 		DCF695EE29E813F800BA4CD0 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		DCF6964129ED328B00BA4CD0 /* NetworkableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkableProtocol.swift; sourceTree = "<group>"; };
+		DCF6964329ED37FA00BA4CD0 /* FakeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkManager.swift; sourceTree = "<group>"; };
+		DCF6964729ED3D0000BA4CD0 /* fruits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fruits.json; sourceTree = "<group>"; };
+		DCF6964929ED3D3000BA4CD0 /* ApiTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTestModel.swift; sourceTree = "<group>"; };
+		DCF6964B29ED430B00BA4CD0 /* ListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +146,10 @@
 			children = (
 				DCF695BE29E7EBD700BA4CD0 /* assignment_9Tests.swift */,
 				DCF695EE29E813F800BA4CD0 /* LoginViewModelTests.swift */,
+				DCF6964329ED37FA00BA4CD0 /* FakeNetworkManager.swift */,
+				DCF6964729ED3D0000BA4CD0 /* fruits.json */,
+				DCF6964929ED3D3000BA4CD0 /* ApiTestModel.swift */,
+				DCF6964B29ED430B00BA4CD0 /* ListViewModelTests.swift */,
 			);
 			path = assignment_9Tests;
 			sourceTree = "<group>";
@@ -190,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				DCF695E629E7F45B00BA4CD0 /* NetworkManager.swift */,
+				DCF6964129ED328B00BA4CD0 /* NetworkableProtocol.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -309,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF6964829ED3D0000BA4CD0 /* fruits.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +348,7 @@
 				DCF695DB29E7EC7F00BA4CD0 /* LoginViewController.swift in Sources */,
 				DCF695A829E7EBD600BA4CD0 /* AppDelegate.swift in Sources */,
 				DCF695E729E7F45B00BA4CD0 /* NetworkManager.swift in Sources */,
+				DCF6964229ED328B00BA4CD0 /* NetworkableProtocol.swift in Sources */,
 				DCF695DF29E7ECE900BA4CD0 /* DetailViewController.swift in Sources */,
 				DCF695AA29E7EBD600BA4CD0 /* SceneDelegate.swift in Sources */,
 				DCF695DD29E7ECC700BA4CD0 /* tableViewController.swift in Sources */,
@@ -343,8 +360,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF6964A29ED3D3000BA4CD0 /* ApiTestModel.swift in Sources */,
 				DCF695EF29E813F800BA4CD0 /* LoginViewModelTests.swift in Sources */,
 				DCF695BF29E7EBD700BA4CD0 /* assignment_9Tests.swift in Sources */,
+				DCF6964C29ED430B00BA4CD0 /* ListViewModelTests.swift in Sources */,
+				DCF6964429ED37FA00BA4CD0 /* FakeNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
