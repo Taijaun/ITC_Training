@@ -10,20 +10,16 @@ import XCTest
 
 final class ListViewModelTests: XCTestCase {
     
-    var fakeNetworkManager: FakeNetworkManager!
     var tableViewModel: TableViewModel!
     
     
 
     override func setUpWithError() throws {
-        fakeNetworkManager = FakeNetworkManager()
-        tableViewModel = TableViewModel(manager: fakeNetworkManager)
         
     }
 
     override func tearDownWithError() throws {
         tableViewModel = nil
-        fakeNetworkManager = nil
     }
     
     
@@ -31,6 +27,7 @@ final class ListViewModelTests: XCTestCase {
     // MARK: - Faking
     
     func testApiCallWithClosure() {
+        tableViewModel = TableViewModel(manager: FakeNetworkManager())
         
         tableViewModel.getDataWithClosure(urlString: "fruits")
         
@@ -51,6 +48,7 @@ final class ListViewModelTests: XCTestCase {
     // MARK: - Mocking
     
     func testApiCallWithMockData() {
+        tableViewModel = TableViewModel(manager: FakeNetworkManagerMocking())
         
         tableViewModel.getDataWithClosure(urlString: "fruits")
         
@@ -69,13 +67,18 @@ final class ListViewModelTests: XCTestCase {
         
     }
     
-    func testApiCallWithMockDataWithStubbing() {
+    //MARK: - Stubbing
+    
+    func testApiCallDataWithStubbing() {
         
+        // Set the stubbing data
+        let resultArr = [Fruit(genus: "abc", name: "Apple", id: 1, family: "Apple Family", order: "Apple Order", nutritions: (Nutritions(carbohydrates: 1.0, protein: 5.0, fat: 4.0, calories: 2, sugar: 3.0))), Fruit(genus: "cba", name: "Pear", id: 2, family: "Pear Family", order: "Pear Order", nutritions: (Nutritions(carbohydrates: 2.0, protein: 3.0, fat: 4.0, calories: 5, sugar: 6.0)))]
         
-        let mockArr = [Fruit(genus: "abc", name: "Apple", id: 1, family: "Apple Family", order: "Apple Order", nutritions: (Nutritions(carbohydrates: 1.0, protein: 5.0, fat: 4.0, calories: 2, sugar: 3.0))), Fruit(genus: "cba", name: "Pear", id: 2, family: "Pear Family", order: "Pear Order", nutritions: (Nutritions(carbohydrates: 2.0, protein: 3.0, fat: 4.0, calories: 5, sugar: 6.0)))]
+        // instantiate the network manager class and set the array
+        let fakeNetworkManagerStubbing = FakeNetworkManagerStubbing()
+        fakeNetworkManagerStubbing.resultArr = resultArr
         
-        fakeNetworkManager.resultArr = mockArr
-        
+        tableViewModel = TableViewModel(manager: fakeNetworkManagerStubbing)
         tableViewModel.getDataWithClosure(urlString: "fruits")
         
         let duration: Double = 3.0
