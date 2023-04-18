@@ -11,10 +11,14 @@ import XCTest
 final class ListViewModelTests: XCTestCase {
     
     var tableViewModel: TableViewModel!
+    var mockViewModel: TableViewModel!
+    var stubbingViewModel: TableViewModel!
     
     
 
     override func setUpWithError() throws {
+        // Add the different models with different network managers
+        // Instead of doing it in the test func
         
     }
 
@@ -48,6 +52,7 @@ final class ListViewModelTests: XCTestCase {
     // MARK: - Mocking
     
     func testApiCallWithMockData() {
+        
         tableViewModel = TableViewModel(manager: FakeNetworkManagerMocking())
         
         tableViewModel.getDataWithClosure(urlString: "fruits")
