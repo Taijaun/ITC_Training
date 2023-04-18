@@ -36,6 +36,7 @@ class DetailViewController: UIViewController {
         guard let fruit = fruit else {return}
 
         labelFruitName.text = fruit.name
+        labelFamilyName.text = "Family: \(fruit.family)"
         labelOrderName.text = "Order: \(fruit.order)"
         labelGenusOrder.text = "Genus: \(fruit.genus)"
         labelCarbs.text = "Carbs: \(fruit.nutritions.carbohydrates)"
