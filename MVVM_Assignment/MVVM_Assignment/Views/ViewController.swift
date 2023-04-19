@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,5 +17,14 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func navigateToTableTapped(_ sender: Any) {
+        
+        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let tableVC = storyboard.instantiateViewController(withIdentifier: "TableViewController")
+        navigationController?.pushViewController(tableVC, animated: true)
+        
+    }
+    
+    
 }
 

@@ -18,6 +18,13 @@
 		DC6758BE29F02CE700EC862D /* MVVM_AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758BD29F02CE700EC862D /* MVVM_AssignmentUITestsLaunchTests.swift */; };
 		DC6758CE29F02D9500EC862D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758CD29F02D9500EC862D /* TableViewController.swift */; };
 		DC6758D029F02DA100EC862D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758CF29F02DA100EC862D /* DetailsViewController.swift */; };
+		DC6758D229F0326300EC862D /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758D129F0326300EC862D /* Products.swift */; };
+		DC6758D429F0359100EC862D /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758D329F0359100EC862D /* FirstTableViewCell.swift */; };
+		DC6758D729F0368500EC862D /* NetworkingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758D629F0368500EC862D /* NetworkingProtocol.swift */; };
+		DC6758D929F036D900EC862D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758D829F036D900EC862D /* NetworkManager.swift */; };
+		DC6758DB29F0378500EC862D /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758DA29F0378500EC862D /* TableViewModel.swift */; };
+		DC6758DE29F0406300EC862D /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758DC29F0406200EC862D /* SecondTableViewCell.swift */; };
+		DC6758DF29F0406300EC862D /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6758DD29F0406200EC862D /* SecondTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		DC6758BD29F02CE700EC862D /* MVVM_AssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_AssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DC6758CD29F02D9500EC862D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		DC6758CF29F02DA100EC862D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		DC6758D129F0326300EC862D /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		DC6758D329F0359100EC862D /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		DC6758D629F0368500EC862D /* NetworkingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProtocol.swift; sourceTree = "<group>"; };
+		DC6758D829F036D900EC862D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DC6758DA29F0378500EC862D /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		DC6758DC29F0406200EC862D /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		DC6758DD29F0406200EC862D /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +117,16 @@
 		DC67589929F02CE600EC862D /* MVVM_Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				DC6758CC29F02D6100EC862D /* ViewModel */,
-				DC6758CB29F02D5A00EC862D /* Views */,
-				DC6758CA29F02D5300EC862D /* Model */,
 				DC67589A29F02CE600EC862D /* AppDelegate.swift */,
 				DC67589C29F02CE600EC862D /* SceneDelegate.swift */,
 				DC6758A029F02CE600EC862D /* Main.storyboard */,
 				DC6758A329F02CE600EC862D /* Assets.xcassets */,
 				DC6758A529F02CE600EC862D /* LaunchScreen.storyboard */,
 				DC6758A829F02CE600EC862D /* Info.plist */,
+				DC6758D529F0367100EC862D /* Services */,
+				DC6758CC29F02D6100EC862D /* ViewModel */,
+				DC6758CB29F02D5A00EC862D /* Views */,
+				DC6758CA29F02D5300EC862D /* Model */,
 			);
 			path = MVVM_Assignment;
 			sourceTree = "<group>";
@@ -136,6 +151,7 @@
 		DC6758CA29F02D5300EC862D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DC6758D129F0326300EC862D /* Products.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,6 +162,9 @@
 				DC67589E29F02CE600EC862D /* ViewController.swift */,
 				DC6758CD29F02D9500EC862D /* TableViewController.swift */,
 				DC6758CF29F02DA100EC862D /* DetailsViewController.swift */,
+				DC6758D329F0359100EC862D /* FirstTableViewCell.swift */,
+				DC6758DC29F0406200EC862D /* SecondTableViewCell.swift */,
+				DC6758DD29F0406200EC862D /* SecondTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,8 +172,18 @@
 		DC6758CC29F02D6100EC862D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DC6758DA29F0378500EC862D /* TableViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DC6758D529F0367100EC862D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC6758D629F0368500EC862D /* NetworkingProtocol.swift */,
+				DC6758D829F036D900EC862D /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +293,7 @@
 				DC6758A729F02CE600EC862D /* LaunchScreen.storyboard in Resources */,
 				DC6758A429F02CE600EC862D /* Assets.xcassets in Resources */,
 				DC6758A229F02CE600EC862D /* Main.storyboard in Resources */,
+				DC6758DF29F0406300EC862D /* SecondTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,11 +318,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6758DE29F0406300EC862D /* SecondTableViewCell.swift in Sources */,
+				DC6758D929F036D900EC862D /* NetworkManager.swift in Sources */,
+				DC6758DB29F0378500EC862D /* TableViewModel.swift in Sources */,
 				DC67589F29F02CE600EC862D /* ViewController.swift in Sources */,
 				DC67589B29F02CE600EC862D /* AppDelegate.swift in Sources */,
 				DC67589D29F02CE600EC862D /* SceneDelegate.swift in Sources */,
+				DC6758D229F0326300EC862D /* Products.swift in Sources */,
 				DC6758CE29F02D9500EC862D /* TableViewController.swift in Sources */,
+				DC6758D729F0368500EC862D /* NetworkingProtocol.swift in Sources */,
 				DC6758D029F02DA100EC862D /* DetailsViewController.swift in Sources */,
+				DC6758D429F0359100EC862D /* FirstTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
