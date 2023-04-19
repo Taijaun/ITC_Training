@@ -9,6 +9,17 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    // App LifeCycle/States
+    /*
+     1. Not Running: - Not running
+     2. Inactive: - Running in the foreground but not receiving events like taps, when a call is received the app becomes inactive
+     3. Active: App is running in the foreground and receiving events
+     4. Background: Running the in the background instead of foreground but still executing some logic like playing music
+     5. Suspended: App is running in the background but not executing any logic
+     
+     
+     */
 
 
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
