@@ -62,6 +62,26 @@ final class LoginViewControllerTests: XCTestCase {
         
         
     }
+    
+    func testDetailFlowValid() throws {
+        
+        let emailTextField = app.textFields["E-mail"]
+        emailTextField.tap()
+        emailTextField.typeText("Hello@gmail.com")
+
+        let passwordTextField = app.textFields["Password"]
+        passwordTextField.tap()
+        passwordTextField.typeText("12345678")
+
+        let loginButton = app.buttons["Button"]
+        loginButton.tap()
+        
+        let showDetailsButton = app.buttons["Show details"].firstMatch
+        showDetailsButton.tap()
+        
+        let persimmonLabel = app.staticTexts["Persimmon"]
+        XCTAssertTrue(persimmonLabel.exists)
+    }
 
     func testExample() throws {
         

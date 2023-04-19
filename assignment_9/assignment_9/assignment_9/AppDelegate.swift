@@ -11,10 +11,26 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        print("Will Finish Launching With Options Started")
+        print("State restoration not started yet")
+        print("Will Finish Launching With Options finished")
+        return true
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        print("Did Finish Launching With Options Started")
+        print("Restore app state if needed, no UI yet")
+        print("Did Finish Launching With Options finished")
         return true
+    }
+
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        print("Application Will Terminate started")
+        print("Do some logic")
+        print("Application will terminate finished")
     }
 
     // MARK: UISceneSession Lifecycle

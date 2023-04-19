@@ -1,4 +1,5 @@
 import UIKit
+import CoreFoundation
 
 //Queues
 
@@ -20,7 +21,19 @@ DispatchQueue.main.asyncAfter(deadline: .now() + 7){
 //// Global Queue
 DispatchQueue.global(qos: .background).async {
     print("Global task started")
+    for i in 1...4{
+        print(i)
+    }
     print("Global task ended")
+}
+
+DispatchQueue.global(qos: .background).async {
+    print("2nd global task started")
+    for i in 10...14{
+        print(i)
+    }
+    
+    print("2nd global task ended")
 }
 
 
@@ -45,11 +58,19 @@ let concurrentQueue = DispatchQueue(label: "com.tp.ConcurrentQueue",attributes: 
 
 concurrentQueue.async {
     print("task 3 started")
+    for i in 10...14{
+        print(i)
+    }
     print("task 3 finished")
 }
 
 concurrentQueue.async {
     print("task 4 started")
+    
+    for i in 20...24{
+        print(i)
+    }
+    
     print("task 4 finished")
     
 }
