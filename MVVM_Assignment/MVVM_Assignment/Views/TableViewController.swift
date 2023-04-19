@@ -41,7 +41,7 @@ extension TableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell2") as! SecondTableViewCell
         cell.labelName.text = tableViewModel.productList[indexPath.row].title
-        cell.cellImageView.image = UIImageView.loadImageFromAPI(url:self.tableViewModel.productList[indexPath.row].thumbnail)
+        cell.cellImageView.loadImageFromURL(url: tableViewModel.productList[indexPath.row].thumbnail, cell: cell)
         return cell
     }
     
@@ -65,17 +65,4 @@ extension TableViewController: UITableViewDelegate{
     }
 }
 
-extension UIImageView {
-    
-    func loadFromAPI(url: URL) -> UIImage {
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
-            }
-        }
-    }
-}
+

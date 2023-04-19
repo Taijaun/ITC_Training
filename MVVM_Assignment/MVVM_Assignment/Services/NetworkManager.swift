@@ -38,7 +38,6 @@ class NetworkManager: Networker{
             do {
                 let products = try JSONDecoder().decode(type.self, from: data)
                 // Pass the array
-                print(products)
                 handler(.success(products))
             } catch {
                 print(error.localizedDescription)
