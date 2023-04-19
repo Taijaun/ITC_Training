@@ -16,6 +16,8 @@
 		DC6758B229F02CE700EC862D /* MVVM_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758B129F02CE700EC862D /* MVVM_AssignmentTests.swift */; };
 		DC6758BC29F02CE700EC862D /* MVVM_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758BB29F02CE700EC862D /* MVVM_AssignmentUITests.swift */; };
 		DC6758BE29F02CE700EC862D /* MVVM_AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758BD29F02CE700EC862D /* MVVM_AssignmentUITestsLaunchTests.swift */; };
+		DC6758CE29F02D9500EC862D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758CD29F02D9500EC862D /* TableViewController.swift */; };
+		DC6758D029F02DA100EC862D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758CF29F02DA100EC862D /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		DC6758B729F02CE700EC862D /* MVVM_AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVM_AssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6758BB29F02CE700EC862D /* MVVM_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_AssignmentUITests.swift; sourceTree = "<group>"; };
 		DC6758BD29F02CE700EC862D /* MVVM_AssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_AssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC6758CD29F02D9500EC862D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		DC6758CF29F02DA100EC862D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		DC67589929F02CE600EC862D /* MVVM_Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				DC6758CC29F02D6100EC862D /* ViewModel */,
+				DC6758CB29F02D5A00EC862D /* Views */,
+				DC6758CA29F02D5300EC862D /* Model */,
 				DC67589A29F02CE600EC862D /* AppDelegate.swift */,
 				DC67589C29F02CE600EC862D /* SceneDelegate.swift */,
-				DC67589E29F02CE600EC862D /* ViewController.swift */,
 				DC6758A029F02CE600EC862D /* Main.storyboard */,
 				DC6758A329F02CE600EC862D /* Assets.xcassets */,
 				DC6758A529F02CE600EC862D /* LaunchScreen.storyboard */,
@@ -125,6 +131,30 @@
 				DC6758BD29F02CE700EC862D /* MVVM_AssignmentUITestsLaunchTests.swift */,
 			);
 			path = MVVM_AssignmentUITests;
+			sourceTree = "<group>";
+		};
+		DC6758CA29F02D5300EC862D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC6758CB29F02D5A00EC862D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC67589E29F02CE600EC862D /* ViewController.swift */,
+				DC6758CD29F02D9500EC862D /* TableViewController.swift */,
+				DC6758CF29F02DA100EC862D /* DetailsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC6758CC29F02D6100EC862D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +291,8 @@
 				DC67589F29F02CE600EC862D /* ViewController.swift in Sources */,
 				DC67589B29F02CE600EC862D /* AppDelegate.swift in Sources */,
 				DC67589D29F02CE600EC862D /* SceneDelegate.swift in Sources */,
+				DC6758CE29F02D9500EC862D /* TableViewController.swift in Sources */,
+				DC6758D029F02DA100EC862D /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
