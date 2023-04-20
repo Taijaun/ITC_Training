@@ -32,6 +32,8 @@
 		DC88DB1829F1501E007D838F /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB1729F1501E007D838F /* HomeViewControllerTests.swift */; };
 		DC88DB1C29F157E7007D838F /* TableVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB1B29F157E7007D838F /* TableVCTests.swift */; };
 		DC88DB1E29F15843007D838F /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB1D29F15843007D838F /* DetailViewControllerTests.swift */; };
+		DC88DB2029F15ACD007D838F /* TableViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB1F29F15ACD007D838F /* TableViewModelTests.swift */; };
+		DC88DB2229F15B45007D838F /* FakeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB2129F15B45007D838F /* FakeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		DC88DB1729F1501E007D838F /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		DC88DB1B29F157E7007D838F /* TableVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCTests.swift; sourceTree = "<group>"; };
 		DC88DB1D29F15843007D838F /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
+		DC88DB1F29F15ACD007D838F /* TableViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelTests.swift; sourceTree = "<group>"; };
+		DC88DB2129F15B45007D838F /* FakeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				DC6758B129F02CE700EC862D /* MVVM_AssignmentTests.swift */,
+				DC88DB1F29F15ACD007D838F /* TableViewModelTests.swift */,
+				DC88DB2129F15B45007D838F /* FakeManager.swift */,
 			);
 			path = MVVM_AssignmentTests;
 			sourceTree = "<group>";
@@ -370,6 +376,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC6758B229F02CE700EC862D /* MVVM_AssignmentTests.swift in Sources */,
+				DC88DB2229F15B45007D838F /* FakeManager.swift in Sources */,
+				DC88DB2029F15ACD007D838F /* TableViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
