@@ -14,11 +14,11 @@ var imageCache = NSCache<AnyObject, UIImage>()
 
 extension UIImageView {
     
-    func loadImageFromURL(url: String, cell: UITableViewCell){
+    func loadImageFromURL(url: String, cell: UIImageView){
         
         // If the image is already in the cache, load it instead of getting it again
         if let image = imageCache.object(forKey: url as NSString) {
-            cell.imageView?.image = image
+            cell.image = image
             return
         }
         
@@ -31,7 +31,7 @@ extension UIImageView {
                 DispatchQueue.main.async {
                     // Set image into the cache
                     imageCache.setObject(image, forKey: url as NSString)
-                    cell.imageView?.image = image
+                    cell.image = image
                 }
             }
         }

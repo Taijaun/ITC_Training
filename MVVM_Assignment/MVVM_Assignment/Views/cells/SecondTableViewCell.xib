@@ -10,22 +10,22 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" rowHeight="116" id="KGk-i7-Jjw" customClass="SecondTableViewCell" customModule="MVVM_Assignment" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" rowHeight="100" id="KGk-i7-Jjw" customClass="SecondTableViewCell" customModule="MVVM_Assignment" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YiA-pQ-SRb">
-                        <rect key="frame" x="10" y="10" width="75" height="75"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YiA-pQ-SRb">
+                        <rect key="frame" x="10" y="10" width="50" height="50"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="75" id="dQd-Fk-9Ap"/>
-                            <constraint firstAttribute="height" constant="75" id="gvG-av-xwI"/>
+                            <constraint firstAttribute="height" constant="50" id="BMQ-or-QH7"/>
+                            <constraint firstAttribute="width" constant="50" id="dVl-K7-Avq"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O56-k2-ewM">
-                        <rect key="frame" x="135" y="9.9999999999999982" width="45" height="20.333333333333329"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsq-Jg-PhF">
+                        <rect key="frame" x="110" y="10" width="185" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -33,18 +33,19 @@
                 </subviews>
                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                 <constraints>
-                    <constraint firstItem="YiA-pQ-SRb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ad1-pW-Kzk"/>
-                    <constraint firstAttribute="bottom" secondItem="O56-k2-ewM" secondAttribute="bottom" constant="10" id="FsO-u9-etZ"/>
-                    <constraint firstItem="O56-k2-ewM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Xcb-Mw-EqR"/>
-                    <constraint firstAttribute="bottom" secondItem="YiA-pQ-SRb" secondAttribute="bottom" constant="10" id="mmh-Py-NVZ"/>
-                    <constraint firstItem="O56-k2-ewM" firstAttribute="leading" secondItem="YiA-pQ-SRb" secondAttribute="trailing" constant="50" id="tQE-yN-YJT"/>
-                    <constraint firstItem="YiA-pQ-SRb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="xVL-Yj-SrZ"/>
+                    <constraint firstItem="Lsq-Jg-PhF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="JcZ-uT-nh4"/>
+                    <constraint firstAttribute="bottom" secondItem="YiA-pQ-SRb" secondAttribute="bottom" constant="10" id="Jev-pd-n9R"/>
+                    <constraint firstAttribute="bottom" secondItem="Lsq-Jg-PhF" secondAttribute="bottom" constant="10" id="dV6-Bc-Wbh"/>
+                    <constraint firstAttribute="trailing" secondItem="Lsq-Jg-PhF" secondAttribute="trailing" constant="25" id="e8S-gG-6nU"/>
+                    <constraint firstItem="Lsq-Jg-PhF" firstAttribute="leading" secondItem="YiA-pQ-SRb" secondAttribute="trailing" constant="50" id="lFL-G1-3am"/>
+                    <constraint firstItem="YiA-pQ-SRb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="m10-xW-72b"/>
+                    <constraint firstItem="YiA-pQ-SRb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="whD-6b-NX2"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="cellImageView" destination="YiA-pQ-SRb" id="JYT-sj-09m"/>
-                <outlet property="labelName" destination="O56-k2-ewM" id="bgZ-En-And"/>
+                <outlet property="labelName" destination="Lsq-Jg-PhF" id="nx8-yx-KWv"/>
             </connections>
             <point key="canvasLocation" x="27.480916030534349" y="45.070422535211272"/>
         </tableViewCell>

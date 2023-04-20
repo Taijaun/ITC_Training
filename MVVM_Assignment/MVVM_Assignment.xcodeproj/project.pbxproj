@@ -26,6 +26,9 @@
 		DC6758DE29F0406300EC862D /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758DC29F0406200EC862D /* SecondTableViewCell.swift */; };
 		DC6758DF29F0406300EC862D /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6758DD29F0406200EC862D /* SecondTableViewCell.xib */; };
 		DC6758E129F06BD000EC862D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758E029F06BD000EC862D /* Extensions.swift */; };
+		DC88DB1029F13CD5007D838F /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB0F29F13CD5007D838F /* FirstCollectionViewCell.swift */; };
+		DC88DB1329F14476007D838F /* SecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB1129F14476007D838F /* SecondCollectionViewCell.swift */; };
+		DC88DB1429F14476007D838F /* SecondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC88DB1229F14476007D838F /* SecondCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		DC6758DC29F0406200EC862D /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
 		DC6758DD29F0406200EC862D /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
 		DC6758E029F06BD000EC862D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DC88DB0F29F13CD5007D838F /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC88DB1129F14476007D838F /* SecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC88DB1229F14476007D838F /* SecondCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,12 +168,11 @@
 		DC6758CB29F02D5A00EC862D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DC88DB0E29F13AE5007D838F /* cells */,
 				DC67589E29F02CE600EC862D /* ViewController.swift */,
 				DC6758CD29F02D9500EC862D /* TableViewController.swift */,
 				DC6758CF29F02DA100EC862D /* DetailsViewController.swift */,
 				DC6758D329F0359100EC862D /* FirstTableViewCell.swift */,
-				DC6758DC29F0406200EC862D /* SecondTableViewCell.swift */,
-				DC6758DD29F0406200EC862D /* SecondTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +192,18 @@
 				DC6758D829F036D900EC862D /* NetworkManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		DC88DB0E29F13AE5007D838F /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				DC6758DC29F0406200EC862D /* SecondTableViewCell.swift */,
+				DC6758DD29F0406200EC862D /* SecondTableViewCell.xib */,
+				DC88DB0F29F13CD5007D838F /* FirstCollectionViewCell.swift */,
+				DC88DB1129F14476007D838F /* SecondCollectionViewCell.swift */,
+				DC88DB1229F14476007D838F /* SecondCollectionViewCell.xib */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +314,7 @@
 				DC6758A429F02CE600EC862D /* Assets.xcassets in Resources */,
 				DC6758A229F02CE600EC862D /* Main.storyboard in Resources */,
 				DC6758DF29F0406300EC862D /* SecondTableViewCell.xib in Resources */,
+				DC88DB1429F14476007D838F /* SecondCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC88DB1329F14476007D838F /* SecondCollectionViewCell.swift in Sources */,
 				DC6758DE29F0406300EC862D /* SecondTableViewCell.swift in Sources */,
 				DC6758D929F036D900EC862D /* NetworkManager.swift in Sources */,
 				DC6758DB29F0378500EC862D /* TableViewModel.swift in Sources */,
@@ -332,6 +351,7 @@
 				DC6758CE29F02D9500EC862D /* TableViewController.swift in Sources */,
 				DC6758D729F0368500EC862D /* NetworkingProtocol.swift in Sources */,
 				DC6758D029F02DA100EC862D /* DetailsViewController.swift in Sources */,
+				DC88DB1029F13CD5007D838F /* FirstCollectionViewCell.swift in Sources */,
 				DC6758D429F0359100EC862D /* FirstTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

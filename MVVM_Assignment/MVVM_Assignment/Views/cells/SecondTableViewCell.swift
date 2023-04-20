@@ -11,6 +11,7 @@ class SecondTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var labelName: UILabel!
+    
     @IBOutlet weak var cellImageView: UIImageView!
     
     override func awakeFromNib() {

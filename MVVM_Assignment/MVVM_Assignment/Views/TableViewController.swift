@@ -20,6 +20,8 @@ class TableViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.dataSource = self
+        tableView.delegate = self
+        
         let cellXib = UINib(nibName: "SecondTableViewCell", bundle: nil)
         tableView.register(cellXib, forCellReuseIdentifier: "cell2")
         
@@ -40,8 +42,10 @@ class TableViewController: UIViewController {
 extension TableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell2") as! SecondTableViewCell
+        let cellThumbnailUrl = tableViewModel.productList[indexPath.row].thumbnail
+        
         cell.labelName.text = tableViewModel.productList[indexPath.row].title
-        cell.cellImageView.loadImageFromURL(url: tableViewModel.productList[indexPath.row].thumbnail, cell: cell)
+        cell.cellImageView.loadImageFromURL(url: cellThumbnailUrl , cell: cell.cellImageView)
         return cell
     }
     
@@ -60,7 +64,8 @@ extension TableViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let detailVC = storyboard.instantiateViewController(identifier: "DetailsViewController")
+        let detailVC = storyboard.instantiateViewController(identifier: "DetailsViewController") as! DetailsViewController
+        detailVC.product = tableViewModel.productList[indexPath.row]
         navigationController?.pushViewController(detailVC, animated: true)
     }
 }
