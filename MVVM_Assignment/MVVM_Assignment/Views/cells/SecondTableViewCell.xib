@@ -19,6 +19,7 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YiA-pQ-SRb">
                         <rect key="frame" x="10" y="10" width="50" height="50"/>
+                        <accessibility key="accessibilityConfiguration" identifier="secondCellImageView"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="BMQ-or-QH7"/>
                             <constraint firstAttribute="width" constant="50" id="dVl-K7-Avq"/>

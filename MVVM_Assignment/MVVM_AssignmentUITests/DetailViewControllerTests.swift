@@ -16,15 +16,26 @@ final class DetailViewControllerTests: XCTestCase {
         app = XCUIApplication()
         app.launch()
         continueAfterFailure = false
+        
+        let navButton = app.buttons["navButton"]
+        navButton.tap()
+        
+        let tableView = app.tables.matching(identifier: "myTableView")
+        let cell = tableView.element(boundBy: 0).cells.element(boundBy: 0)
+        cell.tap()
 
         
     }
 
     override func tearDownWithError() throws {
         
+        app = nil
     }
     
-    
+    func testDoesCollectionExist() throws {
+        
+        
+    }
 
     func testExample() throws {
         // UI tests must launch the application that they test.

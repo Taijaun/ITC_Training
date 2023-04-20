@@ -138,6 +138,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNX-lA-c3U">
                                 <rect key="frame" x="40" y="114" width="313" height="25"/>
+                                <accessibility key="accessibilityConfiguration" identifier="detailsTitle"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="axx-qx-DSl"/>
                                 </constraints>

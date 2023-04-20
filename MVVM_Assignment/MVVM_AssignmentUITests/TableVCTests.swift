@@ -26,12 +26,31 @@ final class TableVCTests: XCTestCase {
     }
     
 
-    func isTableViewVisible() throws {
+    func testIsTableViewVisible() throws {
         
         let tableView = app.tables.matching(identifier: "myTableView")
         let cell = tableView.element(boundBy: 0).cells.element(boundBy: 0)
         
         XCTAssertTrue(cell.exists)
+    }
+    
+    func testImageViewsVisible() throws {
+        
+        // Give the imageView an identifier and check if it exists
+        let imageView = app.images["secondCellImageView"]
+        XCTAssertTrue(imageView.exists)
+        
+    }
+    
+    func testNavToDetailsScreen() throws {
+        
+        let tableView = app.tables.matching(identifier: "myTableView")
+        let cell = tableView.element(boundBy: 0).cells.element(boundBy: 0)
+        cell.tap()
+        
+        let titleLabel = app.staticTexts["detailsTitle"]
+        XCTAssertTrue(titleLabel.exists)
+        
     }
 
     func testLaunchPerformance() throws {
