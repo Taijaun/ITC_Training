@@ -22,6 +22,8 @@ class TableViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
+        tableView.accessibilityIdentifier = "myTableView"
+        
         let cellXib = UINib(nibName: "SecondTableViewCell", bundle: nil)
         tableView.register(cellXib, forCellReuseIdentifier: "cell2")
         

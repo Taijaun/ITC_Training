@@ -43,6 +43,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <accessibility key="accessibilityConfiguration" identifier="secondCell"/>
             <connections>
                 <outlet property="cellImageView" destination="YiA-pQ-SRb" id="JYT-sj-09m"/>
                 <outlet property="labelName" destination="Lsq-Jg-PhF" id="nx8-yx-KWv"/>

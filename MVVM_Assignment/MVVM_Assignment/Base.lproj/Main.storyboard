@@ -19,6 +19,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfx-TV-W8v">
                                 <rect key="frame" x="30" y="403" width="333" height="50"/>
+                                <accessibility key="accessibilityConfiguration" identifier="navButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="EDn-t7-lPT"/>
                                 </constraints>

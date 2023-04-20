@@ -29,6 +29,9 @@
 		DC88DB1029F13CD5007D838F /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB0F29F13CD5007D838F /* FirstCollectionViewCell.swift */; };
 		DC88DB1329F14476007D838F /* SecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB1129F14476007D838F /* SecondCollectionViewCell.swift */; };
 		DC88DB1429F14476007D838F /* SecondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC88DB1229F14476007D838F /* SecondCollectionViewCell.xib */; };
+		DC88DB1829F1501E007D838F /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB1729F1501E007D838F /* HomeViewControllerTests.swift */; };
+		DC88DB1C29F157E7007D838F /* TableVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB1B29F157E7007D838F /* TableVCTests.swift */; };
+		DC88DB1E29F15843007D838F /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB1D29F15843007D838F /* DetailViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		DC88DB0F29F13CD5007D838F /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC88DB1129F14476007D838F /* SecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC88DB1229F14476007D838F /* SecondCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCollectionViewCell.xib; sourceTree = "<group>"; };
+		DC88DB1729F1501E007D838F /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		DC88DB1B29F157E7007D838F /* TableVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCTests.swift; sourceTree = "<group>"; };
+		DC88DB1D29F15843007D838F /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,9 @@
 			children = (
 				DC6758BB29F02CE700EC862D /* MVVM_AssignmentUITests.swift */,
 				DC6758BD29F02CE700EC862D /* MVVM_AssignmentUITestsLaunchTests.swift */,
+				DC88DB1729F1501E007D838F /* HomeViewControllerTests.swift */,
+				DC88DB1B29F157E7007D838F /* TableVCTests.swift */,
+				DC88DB1D29F15843007D838F /* DetailViewControllerTests.swift */,
 			);
 			path = MVVM_AssignmentUITests;
 			sourceTree = "<group>";
@@ -369,6 +378,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC6758BC29F02CE700EC862D /* MVVM_AssignmentUITests.swift in Sources */,
+				DC88DB1E29F15843007D838F /* DetailViewControllerTests.swift in Sources */,
+				DC88DB1C29F157E7007D838F /* TableVCTests.swift in Sources */,
+				DC88DB1829F1501E007D838F /* HomeViewControllerTests.swift in Sources */,
 				DC6758BE29F02CE700EC862D /* MVVM_AssignmentUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
