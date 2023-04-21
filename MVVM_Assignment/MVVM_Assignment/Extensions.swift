@@ -15,23 +15,20 @@ var imageCache = NSCache<AnyObject, UIImage>()
 extension UIImageView {
     
     func loadImageFromURL(url: String, cell: UIImageView){
-        
-        // If the image is already in the cache, load it instead of getting it again
+
         if let image = imageCache.object(forKey: url as NSString) {
             cell.image = image
             return
         }
         
         guard let imageUrl = URL(string: url) else {return}
-        
         DispatchQueue.global().async {
             guard let imageData = try? Data(contentsOf: imageUrl) else {return}
-            
             if let image = UIImage(data: imageData){
                 DispatchQueue.main.async {
-                    // Set image into the cache
                     imageCache.setObject(image, forKey: url as NSString)
                     cell.image = image
+                    
                 }
             }
         }
