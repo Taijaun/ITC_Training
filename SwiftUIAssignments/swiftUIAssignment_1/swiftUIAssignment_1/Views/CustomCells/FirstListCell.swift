@@ -9,12 +9,12 @@ import SwiftUI
 
 struct FirstListCell: View {
     
-    let greeting: String
+    let title: String
     
     var body: some View {
         
         VStack{
-            Text(greeting)
+            Text(title)
             HStack{
                 Image(systemName: "cloud")
                 Text("World")
@@ -25,6 +25,6 @@ struct FirstListCell: View {
 
 struct FirstListCell_Previews: PreviewProvider {
     static var previews: some View {
-        FirstListCell(greeting: "Cell Title")
+        FirstListCell(title: "Cell Title")
     }
 }

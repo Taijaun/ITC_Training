@@ -19,6 +19,7 @@
 		DC88DB6029F2917D007D838F /* GridScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB5F29F2917D007D838F /* GridScreen.swift */; };
 		DC88DB6229F29199007D838F /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB6129F29199007D838F /* DetailScreen.swift */; };
 		DC88DB6529F2968F007D838F /* FirstListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB6429F2968F007D838F /* FirstListCell.swift */; };
+		DC88DB6729F2B795007D838F /* FirstGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB6629F2B795007D838F /* FirstGridCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		DC88DB5F29F2917D007D838F /* GridScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScreen.swift; sourceTree = "<group>"; };
 		DC88DB6129F29199007D838F /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 		DC88DB6429F2968F007D838F /* FirstListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstListCell.swift; sourceTree = "<group>"; };
+		DC88DB6629F2B795007D838F /* FirstGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstGridCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				DC88DB5D29F28F44007D838F /* ListScreen.swift */,
 				DC88DB5F29F2917D007D838F /* GridScreen.swift */,
 				DC88DB6129F29199007D838F /* DetailScreen.swift */,
+				DC88DB6629F2B795007D838F /* FirstGridCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				DC88DB3229F28556007D838F /* ContentView.swift in Sources */,
 				DC88DB3029F28556007D838F /* swiftUIAssignment_1App.swift in Sources */,
 				DC88DB6229F29199007D838F /* DetailScreen.swift in Sources */,
+				DC88DB6729F2B795007D838F /* FirstGridCell.swift in Sources */,
 				DC88DB5C29F2898E007D838F /* LoginViewModel.swift in Sources */,
 				DC88DB5E29F28F44007D838F /* ListScreen.swift in Sources */,
 				DC88DB6029F2917D007D838F /* GridScreen.swift in Sources */,

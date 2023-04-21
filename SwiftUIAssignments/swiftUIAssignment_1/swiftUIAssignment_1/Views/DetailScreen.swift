@@ -11,14 +11,19 @@ struct DetailScreen: View {
     
     let email: String
     let password: String
+    var imageUrl: String = "https://i.dummyjson.com/data/products/24/thumbnail.jpg"
     
     var body: some View {
-        VStack{
-            Text("E-mail: \(email)")
-            Text("Password: \(password)")
+        ZStack{
+            
+            AsyncImage(url:URL(string: imageUrl))
+            
+            VStack{
+                Text("E-mail: \(email)")
+                Text("Password: \(password)")
+            }
         }
     }
-    
 }
 
 struct DetailScreen_Previews: PreviewProvider {

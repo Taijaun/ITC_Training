@@ -12,14 +12,41 @@ struct ListScreen: View {
     let greetings = ["Hello", "hi", "Bonjour", "Good Morning"]
     let farewells = ["Bye", "Cya", "later"]
     
+    let sections = ["Greetings", "Farewells"]
+    
     var body: some View {
         VStack{
             
-            List(greetings, id: \.self){ greeting in
-                
-                FirstListCell(greeting: greeting)
-                
+            List {
+                ForEach(sections, id: \.self){ section in
+                    
+                    Section(section){
+                        if section == "Greetings" {
+                            ForEach(greetings, id: \.self){ greeting in
+                                
+                                NavigationLink{
+                                    DetailScreen(email: greeting, password: "World")
+                                }label: {
+                                    FirstListCell(title: greeting)
+                                }
+                            }
+                        } else {
+                            ForEach(farewells, id: \.self){ farewell in
+                                
+                                NavigationLink{
+                                    DetailScreen(email: farewell, password: "World")
+                                }label: {
+                                    FirstListCell(title: farewell)
+                                }
+                                
+                            }
+                        }
+                    }
+
+                }
             }
+            
+            
         }
     }
 }

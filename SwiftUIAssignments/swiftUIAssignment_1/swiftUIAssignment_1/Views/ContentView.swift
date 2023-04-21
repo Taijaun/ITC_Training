@@ -17,6 +17,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack(path: $path){
+            
             VStack {
                 Text("ITC").padding()
                     .font(.system(size: 50))
@@ -46,7 +47,7 @@ struct ContentView: View {
                 
                 
                 NavigationLink{
-                    DetailScreen(email: userEmail, password: userPassword)
+                    GridScreen()
                 }label: {
                     Text("Grid Screen")
                 }
@@ -75,7 +76,8 @@ struct ContentView: View {
         }
         
         
-        }
+        
+    }
     enum Root{
         case list
         case details
