@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct swiftUIAssignment_1App: App {
+    
+    @StateObject var userDetails = Details()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CustomTabView().environmentObject(userDetails).onAppear{
+                userDetails.email = "Test@gmail.com"
+                userDetails.password = "testpassword"
+            }
         }
     }
 }

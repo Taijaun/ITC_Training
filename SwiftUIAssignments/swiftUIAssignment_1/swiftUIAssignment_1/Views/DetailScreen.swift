@@ -13,14 +13,16 @@ struct DetailScreen: View {
     let password: String
     var imageUrl: String = "https://i.dummyjson.com/data/products/24/thumbnail.jpg"
     
+    @EnvironmentObject var details: Details
+    
     var body: some View {
         ZStack{
             
             AsyncImage(url:URL(string: imageUrl))
             
             VStack{
-                Text("E-mail: \(email)")
-                Text("Password: \(password)")
+                Text("E-mail: \(details.email)")
+                Text("Password: \(details.password)")
             }
         }
     }

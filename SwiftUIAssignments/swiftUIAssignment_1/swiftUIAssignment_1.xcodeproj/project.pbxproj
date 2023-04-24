@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC26C37829F66E0C00986A2C /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC26C37729F66E0C00986A2C /* BindingView.swift */; };
+		DC26C37B29F6793600986A2C /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC26C37A29F6793600986A2C /* Details.swift */; };
+		DC55A4F829F58416007CF63A /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55A4F729F58416007CF63A /* CustomTabView.swift */; };
 		DC88DB3029F28556007D838F /* swiftUIAssignment_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB2F29F28556007D838F /* swiftUIAssignment_1App.swift */; };
 		DC88DB3229F28556007D838F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB3129F28556007D838F /* ContentView.swift */; };
 		DC88DB3429F28557007D838F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC88DB3329F28557007D838F /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC26C37729F66E0C00986A2C /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
+		DC26C37A29F6793600986A2C /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		DC55A4F729F58416007CF63A /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		DC88DB2C29F28556007D838F /* swiftUIAssignment_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUIAssignment_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC88DB2F29F28556007D838F /* swiftUIAssignment_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIAssignment_1App.swift; sourceTree = "<group>"; };
 		DC88DB3129F28556007D838F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +89,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC26C37629F66DDA00986A2C /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				DC26C37729F66E0C00986A2C /* BindingView.swift */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		DC26C37929F6792B00986A2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC26C37A29F6793600986A2C /* Details.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DC88DB2329F28556007D838F = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +128,7 @@
 		DC88DB2E29F28556007D838F /* swiftUIAssignment_1 */ = {
 			isa = PBXGroup;
 			children = (
+				DC26C37929F6792B00986A2C /* Model */,
 				DC88DB5A29F28969007D838F /* ViewModel */,
 				DC88DB5929F28956007D838F /* Views */,
 				DC88DB2F29F28556007D838F /* swiftUIAssignment_1App.swift */,
@@ -143,12 +166,14 @@
 		DC88DB5929F28956007D838F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DC26C37629F66DDA00986A2C /* Wrappers */,
 				DC88DB6329F2967B007D838F /* CustomCells */,
 				DC88DB3129F28556007D838F /* ContentView.swift */,
 				DC88DB5D29F28F44007D838F /* ListScreen.swift */,
 				DC88DB5F29F2917D007D838F /* GridScreen.swift */,
 				DC88DB6129F29199007D838F /* DetailScreen.swift */,
 				DC88DB6629F2B795007D838F /* FirstGridCell.swift */,
+				DC55A4F729F58416007CF63A /* CustomTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -301,10 +326,13 @@
 			files = (
 				DC88DB6529F2968F007D838F /* FirstListCell.swift in Sources */,
 				DC88DB3229F28556007D838F /* ContentView.swift in Sources */,
+				DC26C37829F66E0C00986A2C /* BindingView.swift in Sources */,
 				DC88DB3029F28556007D838F /* swiftUIAssignment_1App.swift in Sources */,
 				DC88DB6229F29199007D838F /* DetailScreen.swift in Sources */,
 				DC88DB6729F2B795007D838F /* FirstGridCell.swift in Sources */,
+				DC26C37B29F6793600986A2C /* Details.swift in Sources */,
 				DC88DB5C29F2898E007D838F /* LoginViewModel.swift in Sources */,
+				DC55A4F829F58416007CF63A /* CustomTabView.swift in Sources */,
 				DC88DB5E29F28F44007D838F /* ListScreen.swift in Sources */,
 				DC88DB6029F2917D007D838F /* GridScreen.swift in Sources */,
 			);

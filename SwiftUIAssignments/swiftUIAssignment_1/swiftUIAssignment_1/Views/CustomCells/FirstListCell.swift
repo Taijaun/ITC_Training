@@ -9,6 +9,8 @@ import SwiftUI
 
 struct FirstListCell: View {
     
+    @EnvironmentObject var details: Details
+    
     let title: String
     
     var body: some View {

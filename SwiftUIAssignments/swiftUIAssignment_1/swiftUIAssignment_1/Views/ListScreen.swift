@@ -13,9 +13,12 @@ struct ListScreen: View {
     let farewells = ["Bye", "Cya", "later"]
     
     let sections = ["Greetings", "Farewells"]
+    @EnvironmentObject var details : Details
     
     var body: some View {
         VStack{
+            
+            Text("\(details.email)")
             
             List {
                 ForEach(sections, id: \.self){ section in

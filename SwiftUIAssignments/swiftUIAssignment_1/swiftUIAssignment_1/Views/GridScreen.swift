@@ -14,8 +14,8 @@ struct GridScreen: View {
     
     var body: some View {
         
-        VStack{
-            ScrollView{
+        ScrollView{
+            VStack{
                 LazyVGrid(columns: gridColumns) {
                     
                     ForEach(transport, id: \.self){ transport in
@@ -24,6 +24,7 @@ struct GridScreen: View {
                 }
             }
         }.padding()
+            .padding(.top, 150)
     }
     
     struct GridScreen_Previews: PreviewProvider {
