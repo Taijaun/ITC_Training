@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		DC8354E029F92927003D7840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8354DF29F92927003D7840 /* AppDelegate.swift */; };
 		DC8354E229F92927003D7840 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8354E129F92927003D7840 /* SceneDelegate.swift */; };
-		DC8354E429F92927003D7840 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8354E329F92927003D7840 /* ViewController.swift */; };
+		DC8354E429F92927003D7840 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8354E329F92927003D7840 /* LoginViewController.swift */; };
 		DC8354E729F92927003D7840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8354E529F92927003D7840 /* Main.storyboard */; };
 		DC8354E929F92928003D7840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8354E829F92928003D7840 /* Assets.xcassets */; };
 		DC8354EC29F92928003D7840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8354EA29F92928003D7840 /* LaunchScreen.storyboard */; };
 		DC8354F729F92929003D7840 /* UIkit_to_SwiftUI_NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8354F629F92929003D7840 /* UIkit_to_SwiftUI_NavigationTests.swift */; };
 		DC83550129F92929003D7840 /* UIkit_to_SwiftUI_NavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83550029F92929003D7840 /* UIkit_to_SwiftUI_NavigationUITests.swift */; };
 		DC83550329F92929003D7840 /* UIkit_to_SwiftUI_NavigationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83550229F92929003D7840 /* UIkit_to_SwiftUI_NavigationUITestsLaunchTests.swift */; };
+		DC83551229F92ABC003D7840 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83551129F92ABC003D7840 /* LoginViewModel.swift */; };
+		DC83551429F92B13003D7840 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83551329F92B13003D7840 /* HomePageView.swift */; };
+		DC83551629F92EA7003D7840 /* AccountPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83551529F92EA7003D7840 /* AccountPageViewController.swift */; };
+		DC83551829F93BB3003D7840 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83551729F93BB3003D7840 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,7 @@
 		DC8354DC29F92927003D7840 /* UIkit_to_SwiftUI_Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIkit_to_SwiftUI_Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8354DF29F92927003D7840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC8354E129F92927003D7840 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DC8354E329F92927003D7840 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC8354E329F92927003D7840 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DC8354E629F92927003D7840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC8354E829F92928003D7840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC8354EB29F92928003D7840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		DC8354FC29F92929003D7840 /* UIkit_to_SwiftUI_NavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIkit_to_SwiftUI_NavigationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC83550029F92929003D7840 /* UIkit_to_SwiftUI_NavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIkit_to_SwiftUI_NavigationUITests.swift; sourceTree = "<group>"; };
 		DC83550229F92929003D7840 /* UIkit_to_SwiftUI_NavigationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIkit_to_SwiftUI_NavigationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC83551129F92ABC003D7840 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DC83551329F92B13003D7840 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		DC83551529F92EA7003D7840 /* AccountPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPageViewController.swift; sourceTree = "<group>"; };
+		DC83551729F93BB3003D7840 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,10 @@
 		DC8354DE29F92927003D7840 /* UIkit_to_SwiftUI_Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				DC83550F29F92A68003D7840 /* Views */,
+				DC83551029F92A93003D7840 /* ViewModel */,
 				DC8354DF29F92927003D7840 /* AppDelegate.swift */,
 				DC8354E129F92927003D7840 /* SceneDelegate.swift */,
-				DC8354E329F92927003D7840 /* ViewController.swift */,
 				DC8354E529F92927003D7840 /* Main.storyboard */,
 				DC8354E829F92928003D7840 /* Assets.xcassets */,
 				DC8354EA29F92928003D7840 /* LaunchScreen.storyboard */,
@@ -125,6 +134,25 @@
 				DC83550229F92929003D7840 /* UIkit_to_SwiftUI_NavigationUITestsLaunchTests.swift */,
 			);
 			path = UIkit_to_SwiftUI_NavigationUITests;
+			sourceTree = "<group>";
+		};
+		DC83550F29F92A68003D7840 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC8354E329F92927003D7840 /* LoginViewController.swift */,
+				DC83551329F92B13003D7840 /* HomePageView.swift */,
+				DC83551529F92EA7003D7840 /* AccountPageViewController.swift */,
+				DC83551729F93BB3003D7840 /* NavigationController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC83551029F92A93003D7840 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC83551129F92ABC003D7840 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC8354E429F92927003D7840 /* ViewController.swift in Sources */,
+				DC83551229F92ABC003D7840 /* LoginViewModel.swift in Sources */,
+				DC8354E429F92927003D7840 /* LoginViewController.swift in Sources */,
 				DC8354E029F92927003D7840 /* AppDelegate.swift in Sources */,
 				DC8354E229F92927003D7840 /* SceneDelegate.swift in Sources */,
+				DC83551429F92B13003D7840 /* HomePageView.swift in Sources */,
+				DC83551829F93BB3003D7840 /* NavigationController.swift in Sources */,
+				DC83551629F92EA7003D7840 /* AccountPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
