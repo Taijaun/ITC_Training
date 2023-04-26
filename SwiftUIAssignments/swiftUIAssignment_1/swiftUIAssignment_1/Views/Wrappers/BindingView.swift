@@ -13,8 +13,8 @@ struct BindingView: View {
     @Binding var isVisible: Bool
     @Binding var loginTitle: String
     
-    @State var userName: String
-    @State var userPass: String
+    @Binding var userName: String
+    @Binding var userPass: String
     
     var body: some View {
         VStack{
@@ -44,7 +44,7 @@ struct BindingView: View {
     
     struct BindingView_Previews: PreviewProvider {
         static var previews: some View {
-            BindingView(isVisible: .constant(true), loginTitle: .constant("Title"), userName: "12345", userPass: "Hello")
+            BindingView(isVisible: .constant(true), loginTitle: .constant("Title"), userName: .constant("12345"), userPass: .constant("Hello"))
         }
     }
 }

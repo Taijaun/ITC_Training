@@ -18,6 +18,7 @@ import SwiftUI
  6. Published
  7. Environment
  8. AppStorage
+ 
  */
 
 struct ContentView: View {
@@ -103,7 +104,7 @@ struct ContentView: View {
             .navigationTitle(Text("First Screen"))
             .navigationBarTitleDisplayMode(.inline)
             .sheet(isPresented: $isBindingScreenVisible) {
-                BindingView(isVisible: $isBindingScreenVisible, loginTitle: $titleText, userName: "", userPass: "")
+                BindingView(isVisible: $isBindingScreenVisible, loginTitle: $titleText, userName: $userEmail, userPass: $userPassword)
             }
         }
         

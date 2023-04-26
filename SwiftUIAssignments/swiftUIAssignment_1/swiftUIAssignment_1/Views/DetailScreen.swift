@@ -21,6 +21,7 @@ struct DetailScreen: View {
             AsyncImage(url:URL(string: imageUrl))
             
             VStack{
+                Text(email)
                 Text("E-mail: \(details.email)")
                 Text("Password: \(details.password)")
             }
