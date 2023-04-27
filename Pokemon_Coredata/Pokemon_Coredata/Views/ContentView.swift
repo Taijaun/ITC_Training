@@ -36,7 +36,7 @@ struct ContentView: View {
                         Alert(title: Text("Error"), message: Text(pokemonViewModel.customisedError?.errorDesc ?? ""), dismissButton: .default(Text("Close")))
                     }
                 } else {
-                    List(pokemonViewModel.pokemonList) { pokemon in
+                    List(results) { pokemon in
                         NavigationLink{
                             DetailsScreen(artist: pokemon.artist ?? "", rarity: pokemon.rarity ?? "", pokemonImage: pokemon.images?.large ?? "")
                         }label: {
