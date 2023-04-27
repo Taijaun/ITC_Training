@@ -15,13 +15,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
+        // If the user has logged in previously skip to home page screen
         if UserDefaults.standard.value(forKey: "isLoggedIn") != nil {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let navbar = storyboard.instantiateViewController(withIdentifier: "NavController")
-            let homePageView = UIHostingController(rootView: HomePageView(navigationController: navbar as? NavigationController))
             
-            self.window?.rootViewController = homePageView
+            let navbar = storyboard.instantiateViewController(withIdentifier: "NavController") as? NavigationController
+            let homePageView = UIHostingController(rootView: HomePageView(navigationController: navbar))
+            navbar?.viewControllers = [homePageView]
+            //let navigationController = UINavigationController(rootViewController: homePageView)
+                        
+            self.window?.rootViewController = navbar
             self.window?.makeKeyAndVisible()
 
         }

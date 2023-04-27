@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PokemonCardImagesEntity" representedClassName="PokemonCardImagesEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="large" optional="YES" attributeType="String"/>
+        <attribute name="small" optional="YES" attributeType="String"/>
+        <relationship name="main" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PokemonModelEntity" inverseName="images" inverseEntity="PokemonModelEntity"/>
+    </entity>
+    <entity name="PokemonModelEntity" representedClassName="PokemonModelEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="artist" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="rarity" optional="YES" attributeType="String"/>
+        <relationship name="images" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PokemonCardImagesEntity" inverseName="main" inverseEntity="PokemonCardImagesEntity"/>
+    </entity>
+</model>

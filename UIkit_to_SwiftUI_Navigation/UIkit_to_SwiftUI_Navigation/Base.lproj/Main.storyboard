@@ -130,7 +130,7 @@
         <!--Navigation Controller-->
         <scene sceneID="GVm-17-fb2">
             <objects>
-                <navigationController storyboardIdentifier="NavController" automaticallyAdjustsScrollViewInsets="NO" id="uZW-hm-GKt" customClass="NavigationController" customModule="UIkit_to_SwiftUI_Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uZW-hm-GKt" customClass="NavigationController" customModule="UIkit_to_SwiftUI_Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jCa-59-zUr">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
