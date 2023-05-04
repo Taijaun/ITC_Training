@@ -10,6 +10,6 @@ import Foundation
 protocol CoreDataOperationalProtocol {
     
     func saveDataToDatabase(list: [PokemonDetails]) async throws
-    func getPokemonDataFromDatabase() -> [PokemonModelEntity]
+    func getPokemonDataFromDatabase() async -> [PokemonModelEntity]
     
 }
