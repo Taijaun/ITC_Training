@@ -16,6 +16,8 @@
 		DC8B07192A04F3F300F984FF /* SwiftUICombineBasicsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8B07182A04F3F300F984FF /* SwiftUICombineBasicsUITestsLaunchTests.swift */; };
 		DC8B072C2A04F75F00F984FF /* FirstSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8B072B2A04F75F00F984FF /* FirstSectionCell.swift */; };
 		DC8B072E2A04F9B600F984FF /* PlanetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8B072D2A04F9B600F984FF /* PlanetModel.swift */; };
+		DC8B07302A04FCA800F984FF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8B072F2A04FCA800F984FF /* ListViewModel.swift */; };
+		DC8B07322A04FF5400F984FF /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8B07312A04FF5400F984FF /* Endpoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		DC8B07182A04F3F300F984FF /* SwiftUICombineBasicsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICombineBasicsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DC8B072B2A04F75F00F984FF /* FirstSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSectionCell.swift; sourceTree = "<group>"; };
 		DC8B072D2A04F9B600F984FF /* PlanetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetModel.swift; sourceTree = "<group>"; };
+		DC8B072F2A04FCA800F984FF /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		DC8B07312A04FF5400F984FF /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,7 @@
 		DC8B07272A04F49500F984FF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DC8B072F2A04FCA800F984FF /* ListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 		DC8B07282A04F49E00F984FF /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				DC8B07312A04FF5400F984FF /* Endpoints.swift */,
 				DC8B07292A04F4A300F984FF /* Networking */,
 			);
 			path = Services;
@@ -311,9 +317,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8B07302A04FCA800F984FF /* ListViewModel.swift in Sources */,
 				DC8B06FE2A04F3F200F984FF /* ListView.swift in Sources */,
 				DC8B072E2A04F9B600F984FF /* PlanetModel.swift in Sources */,
 				DC8B06FC2A04F3F200F984FF /* SwiftUICombineBasicsApp.swift in Sources */,
+				DC8B07322A04FF5400F984FF /* Endpoints.swift in Sources */,
 				DC8B072C2A04F75F00F984FF /* FirstSectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

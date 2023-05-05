@@ -10,12 +10,14 @@ import SwiftUI
 struct FirstSectionCell: View {
     
     let planetName: String
+    let planetTerrain: String
     
     var body: some View {
         
         VStack {
             
             Text(planetName)
+            Text(planetTerrain)
             
         }
     }
@@ -23,6 +25,6 @@ struct FirstSectionCell: View {
 
 struct FirstSectionCell_Previews: PreviewProvider {
     static var previews: some View {
-        FirstSectionCell(planetName: "Earth")
+        FirstSectionCell(planetName: "Earth", planetTerrain: "Desert")
     }
 }
