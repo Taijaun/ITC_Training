@@ -10,6 +10,6 @@ import Combine
 
 protocol NetworkableProtocol {
     
-    func getPlanetsFromApi<T:Decodable>(Url: URL) -> AnyPublisher<T, Error>
+    func getPlanetsFromApi<T:Decodable>(url: URL, type: T.Type) -> AnyPublisher<T, Error>
     
 }

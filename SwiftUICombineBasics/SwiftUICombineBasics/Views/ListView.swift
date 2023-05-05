@@ -23,20 +23,34 @@ import Combine
 
 struct ListView: View {
     
-    @StateObject var listViewModel = ListViewModel()
+    @State private var selection = "Name"
+    let filterBy = ["Name", "Terrain"]
+    @StateObject var listViewModel = ListViewModel(manager: NetworkManager())
+    @State var searchTerm : String = ""
     
     var body: some View {
         
         NavigationStack{
             VStack {
-                List(listViewModel.planetsList) { planet in
-                    FirstSectionCell(planetName: planet.name, planetTerrain: planet.terrain)
+                List(listViewModel.filteredPlanetsList) { planet in
+                    NavigationLink{
+                        DetailsView(planetDetails: planet)
+                    }label: {
+                        FirstSectionCell(planetName: planet.name, planetTerrain: planet.terrain)
+                    }
+                    
                 }
                 
             }
             .padding()
-        }.onAppear {
+        }.refreshable {
             listViewModel.getPlanetList(apiUrl: Endpoints.planetApi)
+        } .onAppear {
+            listViewModel.getPlanetList(apiUrl: Endpoints.planetApi)
+        }
+        .searchable(text: $searchTerm, placement: .navigationBarDrawer(displayMode: .always))
+        .onChange(of: searchTerm) { term in
+            listViewModel.filterPlanets(searchTerm: term)
         }
     }
 }
