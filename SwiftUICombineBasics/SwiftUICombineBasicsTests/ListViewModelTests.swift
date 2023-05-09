@@ -58,7 +58,46 @@ final class ListViewModelTests: XCTestCase {
     
     //MARK: - Tests for the filtering function
     
+    func testSearchWithOneResult() throws {
+        
+        listViewModel.getPlanetList(apiUrl: "PlanetList")
+//        listViewModel.filterPlanets(searchTerm: "Alderaan")
+        
+        let expectation = XCTestExpectation(description: "This test expects the list to have values when filtered")
+        let waitDuration = 10.0
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + waitDuration){
+            self.listViewModel.filterPlanets(searchTerm: "Alderaan")
+            XCTAssertNotNil(self.listViewModel)
+            XCTAssertEqual(self.listViewModel.planetsList.count, 10)
+            XCTAssertEqual(self.listViewModel.filteredPlanetsList.count, 1)
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: waitDuration)
+        
+    }
     
+    func testSearchWithInvalidSearchTerm() throws {
+        
+        listViewModel.getPlanetList(apiUrl: "PlanetList")
+//        listViewModel.filterPlanets(searchTerm: "Alderaan")
+        
+        let expectation = XCTestExpectation(description: "This test expects the list to have values when filtered")
+        let waitDuration = 10.0
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + waitDuration){
+            self.listViewModel.filterPlanets(searchTerm: "zzzzzzzzzz")
+            XCTAssertNotNil(self.listViewModel)
+            XCTAssertEqual(self.listViewModel.planetsList.count, 10)
+            XCTAssertEqual(self.listViewModel.filteredPlanetsList.count, 0)
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: waitDuration)
+        
+    }
+
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
