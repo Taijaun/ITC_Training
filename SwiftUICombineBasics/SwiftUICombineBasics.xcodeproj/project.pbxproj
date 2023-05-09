@@ -22,6 +22,10 @@
 		DC8B07362A05030600F984FF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8B07352A05030600F984FF /* NetworkManager.swift */; };
 		DC8B07382A051ADD00F984FF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8B07372A051ADD00F984FF /* NetworkError.swift */; };
 		DC8B073A2A0525F200F984FF /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8B07392A0525F200F984FF /* DetailsView.swift */; };
+		DC8B073E2A0541BE00F984FF /* FakeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8B073D2A0541BE00F984FF /* FakeNetworkManager.swift */; };
+		DC8B07402A05444200F984FF /* PlanetList.json in Resources */ = {isa = PBXBuildFile; fileRef = DC8B073F2A05444200F984FF /* PlanetList.json */; };
+		DC8B07422A05445E00F984FF /* PlanetListEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = DC8B07412A05445E00F984FF /* PlanetListEmpty.json */; };
+		DC8B07442A0544F400F984FF /* ListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8B07432A0544F400F984FF /* ListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		DC8B07352A05030600F984FF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DC8B07372A051ADD00F984FF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		DC8B07392A0525F200F984FF /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		DC8B073D2A0541BE00F984FF /* FakeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkManager.swift; sourceTree = "<group>"; };
+		DC8B073F2A05444200F984FF /* PlanetList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PlanetList.json; sourceTree = "<group>"; };
+		DC8B07412A05445E00F984FF /* PlanetListEmpty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PlanetListEmpty.json; sourceTree = "<group>"; };
+		DC8B07432A0544F400F984FF /* ListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +140,10 @@
 			isa = PBXGroup;
 			children = (
 				DC8B070C2A04F3F300F984FF /* SwiftUICombineBasicsTests.swift */,
+				DC8B073D2A0541BE00F984FF /* FakeNetworkManager.swift */,
+				DC8B073F2A05444200F984FF /* PlanetList.json */,
+				DC8B07412A05445E00F984FF /* PlanetListEmpty.json */,
+				DC8B07432A0544F400F984FF /* ListViewModelTests.swift */,
 			);
 			path = SwiftUICombineBasicsTests;
 			sourceTree = "<group>";
@@ -312,6 +324,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8B07422A05445E00F984FF /* PlanetListEmpty.json in Resources */,
+				DC8B07402A05444200F984FF /* PlanetList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +361,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC8B070D2A04F3F300F984FF /* SwiftUICombineBasicsTests.swift in Sources */,
+				DC8B073E2A0541BE00F984FF /* FakeNetworkManager.swift in Sources */,
+				DC8B07442A0544F400F984FF /* ListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,6 +32,14 @@ struct ListView: View {
         
         NavigationStack{
             VStack {
+                
+                Button {
+                    //Function to cancel api call
+                } label: {
+                    Text("Cancel Request")
+                }
+
+                
                 List(listViewModel.filteredPlanetsList) { planet in
                     NavigationLink{
                         DetailsView(planetDetails: planet)
@@ -39,10 +47,9 @@ struct ListView: View {
                         FirstSectionCell(planetName: planet.name, planetTerrain: planet.terrain)
                     }
                     
-                }
+                }.scrollContentBackground(.hidden)
                 
-            }
-            .padding()
+            }.padding(.bottom, 50)
         }.refreshable {
             listViewModel.getPlanetList(apiUrl: Endpoints.planetApi)
         } .onAppear {
