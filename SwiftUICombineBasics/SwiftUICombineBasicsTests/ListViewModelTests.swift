@@ -97,6 +97,27 @@ final class ListViewModelTests: XCTestCase {
         wait(for: [expectation], timeout: waitDuration)
         
     }
+    
+    func testSearchWithEmptySearchTerm() throws {
+        
+        listViewModel.getPlanetList(apiUrl: "PlanetList")
+//        listViewModel.filterPlanets(searchTerm: "Alderaan")
+        
+        let expectation = XCTestExpectation(description: "This test expects the list to be equal to the original list as the search term is empty")
+        let waitDuration = 10.0
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + waitDuration){
+            self.listViewModel.filterPlanets(searchTerm: "")
+            XCTAssertNotNil(self.listViewModel)
+            XCTAssertNotNil(self.listViewModel.planetsList)
+            XCTAssertNotNil(self.listViewModel.filteredPlanetsList)
+            XCTAssertEqual(self.listViewModel.planetsList.count, self.listViewModel.filteredPlanetsList.count)
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: waitDuration)
+        
+    }
 
 
     func testPerformanceExample() throws {
