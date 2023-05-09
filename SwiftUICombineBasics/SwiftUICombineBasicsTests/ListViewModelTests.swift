@@ -118,6 +118,25 @@ final class ListViewModelTests: XCTestCase {
         wait(for: [expectation], timeout: waitDuration)
         
     }
+    
+    //MARK: - Tests for cancel function
+    
+    func testCancelAPICall() throws {
+        
+        listViewModel.getPlanetList(apiUrl: "PlanetList")
+        listViewModel.cancelApiCall()
+        
+        let expectation = XCTestExpectation(description: "This test expects the list to be empty")
+        let waitDuration = 5.0
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + waitDuration){
+            XCTAssertNotNil(self.listViewModel)
+            XCTAssertEqual(self.listViewModel.planetsList.count, 0)
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: waitDuration)
+    }
 
 
     func testPerformanceExample() throws {
