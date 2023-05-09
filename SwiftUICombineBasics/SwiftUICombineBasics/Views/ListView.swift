@@ -35,6 +35,7 @@ struct ListView: View {
                 
                 Button {
                     //Function to cancel api call
+                    listViewModel.cancelApiCall()
                 } label: {
                     Text("Cancel Request")
                 }
@@ -53,7 +54,7 @@ struct ListView: View {
         }.refreshable {
             listViewModel.getPlanetList(apiUrl: Endpoints.planetApi)
         } .onAppear {
-            listViewModel.getPlanetList(apiUrl: Endpoints.planetApi)
+                listViewModel.getPlanetList(apiUrl: Endpoints.planetApi)
         }
         .searchable(text: $searchTerm, placement: .navigationBarDrawer(displayMode: .always))
         .onChange(of: searchTerm) { term in

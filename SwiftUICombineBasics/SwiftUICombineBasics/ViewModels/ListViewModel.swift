@@ -65,4 +65,8 @@ class ListViewModel: ObservableObject{
         
     }
     
+    func cancelApiCall() {
+        cancelable.first?.cancel()
+    }
+    
 }

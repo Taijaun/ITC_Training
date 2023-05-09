@@ -17,7 +17,8 @@ class NetworkManager: NetworkableProtocol {
         //Publisher
         return URLSession.shared.dataTaskPublisher(for: url)
         //Operators
-            //.map{$0.data}
+        // delay for canceling
+            .delay(for: .seconds(5.0), scheduler: DispatchQueue.main)
             .tryMap({ (data: Data, response: URLResponse) in
                 guard let httpResponse = response as? HTTPURLResponse, 200...209 ~= httpResponse.statusCode else {
                     throw NetworkError.responseError
