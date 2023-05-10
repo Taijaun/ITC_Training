@@ -11,6 +11,7 @@ import MapKit
 struct ContentView: View {
     
     @StateObject var locationManager = LocationManager()
+    @StateObject var pinManager = PinManager()
     
     @State var staticRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.5, longitude: 0.08), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
     
@@ -21,12 +22,36 @@ struct ContentView: View {
         return MKCoordinateRegion(center: currentLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)).getBinding()
     }
     
+    
     var body: some View {
-        VStack {
-            if let currentRegion = region {
-                Map(coordinateRegion: currentRegion)
+        NavigationStack{
+            VStack {
+                if let currentRegion = region {
+
+                    let userLocation = City(name: "You", coordinate: locationManager.currentLocation?.coordinate ?? CLLocationCoordinate2D(latitude: 51.5, longitude: 0.085))
+                    
+                    Button {
+                        pinManager.annotations.append(userLocation)
+                    } label: {
+                        Text("Add user location")
+                    }
+                    
+                    Map(coordinateRegion: currentRegion, annotationItems: pinManager.annotations){ pin in
+                        //MapMarker(coordinate: $0.coordinate)
+                        
+                        MapAnnotation(coordinate: pin.coordinate) {
+                            NavigationLink {
+                                EmptyView()
+                            } label: {
+                                CustomMapPin(title: pin.name)
+                            }
+
+                            
+                        }
+                    }
+                }
+                
             }
-            
         }
     }
     

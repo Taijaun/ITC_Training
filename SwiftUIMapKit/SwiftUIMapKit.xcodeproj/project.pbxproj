@@ -15,6 +15,10 @@
 		DC944DCE2A0B810900F38BEC /* SwiftUIMapKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944DCD2A0B810900F38BEC /* SwiftUIMapKitUITests.swift */; };
 		DC944DD02A0B810900F38BEC /* SwiftUIMapKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944DCF2A0B810900F38BEC /* SwiftUIMapKitUITestsLaunchTests.swift */; };
 		DC944DDD2A0B85C300F38BEC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944DDC2A0B85C300F38BEC /* LocationManager.swift */; };
+		DC944DDF2A0B8F6C00F38BEC /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944DDE2A0B8F6C00F38BEC /* CityModel.swift */; };
+		DC944DE12A0B905700F38BEC /* CustomMapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944DE02A0B905700F38BEC /* CustomMapPin.swift */; };
+		DC944DE32A0B959400F38BEC /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944DE22A0B959400F38BEC /* DetailsView.swift */; };
+		DC944DE52A0B972600F38BEC /* PinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944DE42A0B972600F38BEC /* PinManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		DC944DCD2A0B810900F38BEC /* SwiftUIMapKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMapKitUITests.swift; sourceTree = "<group>"; };
 		DC944DCF2A0B810900F38BEC /* SwiftUIMapKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMapKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DC944DDC2A0B85C300F38BEC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		DC944DDE2A0B8F6C00F38BEC /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		DC944DE02A0B905700F38BEC /* CustomMapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapPin.swift; sourceTree = "<group>"; };
+		DC944DE22A0B959400F38BEC /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		DC944DE42A0B972600F38BEC /* PinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,10 @@
 				DC944DB42A0B810800F38BEC /* ContentView.swift */,
 				DC944DB62A0B810900F38BEC /* Assets.xcassets */,
 				DC944DB82A0B810900F38BEC /* Preview Content */,
+				DC944DDE2A0B8F6C00F38BEC /* CityModel.swift */,
+				DC944DE02A0B905700F38BEC /* CustomMapPin.swift */,
+				DC944DE22A0B959400F38BEC /* DetailsView.swift */,
+				DC944DE42A0B972600F38BEC /* PinManager.swift */,
 			);
 			path = SwiftUIMapKit;
 			sourceTree = "<group>";
@@ -260,9 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC944DDF2A0B8F6C00F38BEC /* CityModel.swift in Sources */,
 				DC944DB52A0B810800F38BEC /* ContentView.swift in Sources */,
+				DC944DE12A0B905700F38BEC /* CustomMapPin.swift in Sources */,
+				DC944DE52A0B972600F38BEC /* PinManager.swift in Sources */,
 				DC944DB32A0B810800F38BEC /* SwiftUIMapKitApp.swift in Sources */,
 				DC944DDD2A0B85C300F38BEC /* LocationManager.swift in Sources */,
+				DC944DE32A0B959400F38BEC /* DetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
