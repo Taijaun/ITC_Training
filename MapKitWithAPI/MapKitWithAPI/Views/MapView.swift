@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MapView.swift
 //  MapKitWithAPI
 //
 //  Created by Taijaun Pitt on 10/05/2023.
@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MapView: View {
     var body: some View {
         VStack {
             
         }
     }
     
-    struct ContentView_Previews: PreviewProvider {
+    struct MapView_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView()
+            MapView()
         }
     }
 }

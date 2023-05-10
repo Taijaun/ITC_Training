@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		DC944DF32A0B9A7C00F38BEC /* MapKitWithAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944DF22A0B9A7C00F38BEC /* MapKitWithAPIApp.swift */; };
-		DC944DF52A0B9A7C00F38BEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944DF42A0B9A7C00F38BEC /* ContentView.swift */; };
+		DC944DF52A0B9A7C00F38BEC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944DF42A0B9A7C00F38BEC /* MapView.swift */; };
 		DC944DF72A0B9A7D00F38BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC944DF62A0B9A7D00F38BEC /* Assets.xcassets */; };
 		DC944DFA2A0B9A7D00F38BEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC944DF92A0B9A7D00F38BEC /* Preview Assets.xcassets */; };
 		DC944E042A0B9A7D00F38BEC /* MapKitWithAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944E032A0B9A7D00F38BEC /* MapKitWithAPITests.swift */; };
 		DC944E0E2A0B9A7D00F38BEC /* MapKitWithAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944E0D2A0B9A7D00F38BEC /* MapKitWithAPIUITests.swift */; };
 		DC944E102A0B9A7D00F38BEC /* MapKitWithAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944E0F2A0B9A7D00F38BEC /* MapKitWithAPIUITestsLaunchTests.swift */; };
+		DC944E212A0B9D8E00F38BEC /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944E202A0B9D8E00F38BEC /* Users.swift */; };
+		DC944E262A0BA02000F38BEC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944E252A0BA02000F38BEC /* NetworkManager.swift */; };
+		DC944E282A0BA02A00F38BEC /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944E272A0BA02A00F38BEC /* Networkable.swift */; };
+		DC944E2A2A0BA0C100F38BEC /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944E292A0BA0C100F38BEC /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		DC944DEF2A0B9A7C00F38BEC /* MapKitWithAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapKitWithAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC944DF22A0B9A7C00F38BEC /* MapKitWithAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitWithAPIApp.swift; sourceTree = "<group>"; };
-		DC944DF42A0B9A7C00F38BEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC944DF42A0B9A7C00F38BEC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DC944DF62A0B9A7D00F38BEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC944DF92A0B9A7D00F38BEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC944DFF2A0B9A7D00F38BEC /* MapKitWithAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapKitWithAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,10 @@
 		DC944E092A0B9A7D00F38BEC /* MapKitWithAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapKitWithAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC944E0D2A0B9A7D00F38BEC /* MapKitWithAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitWithAPIUITests.swift; sourceTree = "<group>"; };
 		DC944E0F2A0B9A7D00F38BEC /* MapKitWithAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitWithAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC944E202A0B9D8E00F38BEC /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		DC944E252A0BA02000F38BEC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DC944E272A0BA02A00F38BEC /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		DC944E292A0BA0C100F38BEC /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,10 @@
 		DC944DF12A0B9A7C00F38BEC /* MapKitWithAPI */ = {
 			isa = PBXGroup;
 			children = (
-				DC944DF22A0B9A7C00F38BEC /* MapKitWithAPIApp.swift */,
-				DC944DF42A0B9A7C00F38BEC /* ContentView.swift */,
+				DC944E242A0BA01100F38BEC /* Services */,
+				DC944E232A0B9F8900F38BEC /* Views */,
+				DC944E222A0B9F4A00F38BEC /* ViewModels */,
+				DC944E1F2A0B9D8300F38BEC /* Model */,
 				DC944DF62A0B9A7D00F38BEC /* Assets.xcassets */,
 				DC944DF82A0B9A7D00F38BEC /* Preview Content */,
 			);
@@ -125,6 +135,40 @@
 				DC944E0F2A0B9A7D00F38BEC /* MapKitWithAPIUITestsLaunchTests.swift */,
 			);
 			path = MapKitWithAPIUITests;
+			sourceTree = "<group>";
+		};
+		DC944E1F2A0B9D8300F38BEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC944E202A0B9D8E00F38BEC /* Users.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC944E222A0B9F4A00F38BEC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DC944E292A0BA0C100F38BEC /* MapViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DC944E232A0B9F8900F38BEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC944DF22A0B9A7C00F38BEC /* MapKitWithAPIApp.swift */,
+				DC944DF42A0B9A7C00F38BEC /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC944E242A0BA01100F38BEC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC944E252A0BA02000F38BEC /* NetworkManager.swift */,
+				DC944E272A0BA02A00F38BEC /* Networkable.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC944DF52A0B9A7C00F38BEC /* ContentView.swift in Sources */,
+				DC944E262A0BA02000F38BEC /* NetworkManager.swift in Sources */,
+				DC944DF52A0B9A7C00F38BEC /* MapView.swift in Sources */,
+				DC944E212A0B9D8E00F38BEC /* Users.swift in Sources */,
+				DC944E282A0BA02A00F38BEC /* Networkable.swift in Sources */,
 				DC944DF32A0B9A7C00F38BEC /* MapKitWithAPIApp.swift in Sources */,
+				DC944E2A2A0BA0C100F38BEC /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
