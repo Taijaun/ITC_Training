@@ -56,6 +56,7 @@ final class ListViewModelTests: XCTestCase {
         
     }
     
+    
     //MARK: - Tests for the filtering function
     
     func testSearchWithOneResult() throws {
