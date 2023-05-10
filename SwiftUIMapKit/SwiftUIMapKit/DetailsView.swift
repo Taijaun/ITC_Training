@@ -6,15 +6,23 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct DetailsView: View {
+    
+    var location: City
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text(location.name)
+            Text("\(location.coordinate.latitude)")
+            Text("\(location.coordinate.longitude)")
+        }
     }
 }
 
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsView()
+        DetailsView(location: City(name: "Test", coordinate: CLLocationCoordinate2D(latitude: 53.483959, longitude: -2.244644)))
     }
 }

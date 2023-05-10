@@ -41,7 +41,7 @@ struct ContentView: View {
                         
                         MapAnnotation(coordinate: pin.coordinate) {
                             NavigationLink {
-                                EmptyView()
+                                DetailsView(location: pin)
                             } label: {
                                 CustomMapPin(title: pin.name)
                             }
