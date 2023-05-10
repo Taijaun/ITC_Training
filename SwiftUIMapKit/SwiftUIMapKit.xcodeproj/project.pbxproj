@@ -104,15 +104,11 @@
 		DC944DB12A0B810800F38BEC /* SwiftUIMapKit */ = {
 			isa = PBXGroup;
 			children = (
-				DC944DDC2A0B85C300F38BEC /* LocationManager.swift */,
-				DC944DB22A0B810800F38BEC /* SwiftUIMapKitApp.swift */,
-				DC944DB42A0B810800F38BEC /* ContentView.swift */,
+				DC944E1E2A0B9CC400F38BEC /* ViewModel */,
+				DC944E1D2A0B9C9E00F38BEC /* Model */,
+				DC944E1C2A0B9C7E00F38BEC /* Views */,
 				DC944DB62A0B810900F38BEC /* Assets.xcassets */,
 				DC944DB82A0B810900F38BEC /* Preview Content */,
-				DC944DDE2A0B8F6C00F38BEC /* CityModel.swift */,
-				DC944DE02A0B905700F38BEC /* CustomMapPin.swift */,
-				DC944DE22A0B959400F38BEC /* DetailsView.swift */,
-				DC944DE42A0B972600F38BEC /* PinManager.swift */,
 			);
 			path = SwiftUIMapKit;
 			sourceTree = "<group>";
@@ -140,6 +136,34 @@
 				DC944DCF2A0B810900F38BEC /* SwiftUIMapKitUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIMapKitUITests;
+			sourceTree = "<group>";
+		};
+		DC944E1C2A0B9C7E00F38BEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC944DB22A0B810800F38BEC /* SwiftUIMapKitApp.swift */,
+				DC944DB42A0B810800F38BEC /* ContentView.swift */,
+				DC944DE22A0B959400F38BEC /* DetailsView.swift */,
+				DC944DE02A0B905700F38BEC /* CustomMapPin.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC944E1D2A0B9C9E00F38BEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC944DDE2A0B8F6C00F38BEC /* CityModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC944E1E2A0B9CC400F38BEC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC944DDC2A0B85C300F38BEC /* LocationManager.swift */,
+				DC944DE42A0B972600F38BEC /* PinManager.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
