@@ -16,6 +16,8 @@ class MapViewModel: ObservableObject{
         self.manager = manager
     }
     
+    static var shared = MapViewModel(manager: NetworkManager())
+    
     func getUsersList(urlString: String) async{
         
         guard let url = URL(string:urlString) else {return}
@@ -25,9 +27,9 @@ class MapViewModel: ObservableObject{
             // initialize async await func to fetch data from Network Manager
             let data = try await self.manager.callApi(url: url)
             // decode the JSON from raw data
-            let userData = try JSONDecoder().decode(Users.self, from: data)
+            let userData = try JSONDecoder().decode([Users].self, from: data)
             self.userList = userData
-            
+            //print(self.userList)
             
         }catch let error{
             print(error.localizedDescription)

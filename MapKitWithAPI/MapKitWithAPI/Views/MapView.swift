@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct MapView: View {
+    
+    
     var body: some View {
         VStack {
             
+        }.onAppear{
+            Task{
+                await MapViewModel.shared.getUsersList(urlString:"https://jsonplaceholder.typicode.com/users")
+            }
         }
     }
     

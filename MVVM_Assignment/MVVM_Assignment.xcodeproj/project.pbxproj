@@ -34,6 +34,8 @@
 		DC88DB1E29F15843007D838F /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB1D29F15843007D838F /* DetailViewControllerTests.swift */; };
 		DC88DB2029F15ACD007D838F /* TableViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB1F29F15ACD007D838F /* TableViewModelTests.swift */; };
 		DC88DB2229F15B45007D838F /* FakeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB2129F15B45007D838F /* FakeManager.swift */; };
+		DC944E2D2A0CD9F800F38BEC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944E2C2A0CD9F800F38BEC /* Coordinator.swift */; };
+		DC944E2F2A0CDAAF00F38BEC /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944E2E2A0CDAAF00F38BEC /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		DC88DB1D29F15843007D838F /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
 		DC88DB1F29F15ACD007D838F /* TableViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelTests.swift; sourceTree = "<group>"; };
 		DC88DB2129F15B45007D838F /* FakeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeManager.swift; sourceTree = "<group>"; };
+		DC944E2C2A0CD9F800F38BEC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DC944E2E2A0CDAAF00F38BEC /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,7 @@
 				DC6758A329F02CE600EC862D /* Assets.xcassets */,
 				DC6758A529F02CE600EC862D /* LaunchScreen.storyboard */,
 				DC6758A829F02CE600EC862D /* Info.plist */,
+				DC944E2B2A0CD9D200F38BEC /* Coordinaor */,
 				DC6758D529F0367100EC862D /* Services */,
 				DC6758CC29F02D6100EC862D /* ViewModel */,
 				DC6758CB29F02D5A00EC862D /* Views */,
@@ -187,7 +192,6 @@
 				DC67589E29F02CE600EC862D /* ViewController.swift */,
 				DC6758CD29F02D9500EC862D /* TableViewController.swift */,
 				DC6758CF29F02DA100EC862D /* DetailsViewController.swift */,
-				DC6758D329F0359100EC862D /* FirstTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +216,7 @@
 		DC88DB0E29F13AE5007D838F /* cells */ = {
 			isa = PBXGroup;
 			children = (
+				DC6758D329F0359100EC862D /* FirstTableViewCell.swift */,
 				DC6758DC29F0406200EC862D /* SecondTableViewCell.swift */,
 				DC6758DD29F0406200EC862D /* SecondTableViewCell.xib */,
 				DC88DB0F29F13CD5007D838F /* FirstCollectionViewCell.swift */,
@@ -219,6 +224,15 @@
 				DC88DB1229F14476007D838F /* SecondCollectionViewCell.xib */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		DC944E2B2A0CD9D200F38BEC /* Coordinaor */ = {
+			isa = PBXGroup;
+			children = (
+				DC944E2C2A0CD9F800F38BEC /* Coordinator.swift */,
+				DC944E2E2A0CDAAF00F38BEC /* MainCoordinator.swift */,
+			);
+			path = Coordinaor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,12 +370,14 @@
 			files = (
 				DC88DB1329F14476007D838F /* SecondCollectionViewCell.swift in Sources */,
 				DC6758DE29F0406300EC862D /* SecondTableViewCell.swift in Sources */,
+				DC944E2D2A0CD9F800F38BEC /* Coordinator.swift in Sources */,
 				DC6758D929F036D900EC862D /* NetworkManager.swift in Sources */,
 				DC6758DB29F0378500EC862D /* TableViewModel.swift in Sources */,
 				DC67589F29F02CE600EC862D /* ViewController.swift in Sources */,
 				DC67589B29F02CE600EC862D /* AppDelegate.swift in Sources */,
 				DC67589D29F02CE600EC862D /* SceneDelegate.swift in Sources */,
 				DC6758D229F0326300EC862D /* Products.swift in Sources */,
+				DC944E2F2A0CDAAF00F38BEC /* MainCoordinator.swift in Sources */,
 				DC6758E129F06BD000EC862D /* Extensions.swift in Sources */,
 				DC6758CE29F02D9500EC862D /* TableViewController.swift in Sources */,
 				DC6758D729F0368500EC862D /* NetworkingProtocol.swift in Sources */,

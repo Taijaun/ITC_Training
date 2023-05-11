@@ -12,6 +12,7 @@ class TableViewController: UIViewController {
     var dummyArry = [1, 2, 3, 4, 5]
     
     let tableViewModel = TableViewModel(manager: NetworkManager())
+    var mainCoordinator: MainCoordinator?
     
 
     @IBOutlet weak var tableView: UITableView!
@@ -65,10 +66,12 @@ extension TableViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let detailVC = storyboard.instantiateViewController(identifier: "DetailsViewController") as! DetailsViewController
-        detailVC.product = tableViewModel.productList[indexPath.row]
-        navigationController?.pushViewController(detailVC, animated: true)
+        mainCoordinator?.goToDetailScreen(product: tableViewModel.productList[indexPath.row])
+        
+//        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let detailVC = storyboard.instantiateViewController(identifier: "DetailsViewController") as! DetailsViewController
+//        detailVC.product = tableViewModel.productList[indexPath.row]
+//        navigationController?.pushViewController(detailVC, animated: true)
     }
 }
 
