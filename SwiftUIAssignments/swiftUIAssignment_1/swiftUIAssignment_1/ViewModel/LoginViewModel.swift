@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import LocalAuthentication
 
-class LoginViewModel {
+class LoginViewModel: ObservableObject {
     
+    @Published var credentials = Credentials()
+    @Published var authenticationError: AuthenticationError?
     
     func isLoginValid(email: String?, password: String?) -> Bool{
         
@@ -33,6 +36,62 @@ class LoginViewModel {
         validLogin = isValidPassword && isEmailValid
         
         return validLogin
+        
+    }
+    
+    func checkBiometricType() -> biometricType {
+        
+        let authContext = LAContext()
+        let _ = authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
+        
+        switch authContext.biometryType{
+            
+        case .none:
+            return .none
+        case .touchID:
+            return .touch
+        case .faceID:
+            return .face
+        @unknown default:
+            return .none
+        }
+    }
+    
+    func authenticateUser(email:String, password: String, completion: @escaping (Result<Credentials, AuthenticationError>) -> ()){
+        let credentials = Credentials(email: email, password: password)
+        
+        let authContext = LAContext()
+        var error: NSError?
+        let canEval = authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error)
+        
+        if let error = error {
+            switch error.code{
+                
+            case -6:
+                completion(.failure(.accessDenied))
+            case -7:
+                if authContext.biometryType == .faceID{
+                    completion(.failure(.noFaceId))
+                } else {
+                    completion(.failure(.noTouchId))
+                }
+                
+            default:
+                completion(.failure(.biometricError))
+            }
+        }
+        if canEval{
+            if authContext.biometryType != .none{
+                authContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Need to access Keychain") { success, error in
+                    
+                    if error != nil {
+                        completion(.failure(.biometricError))
+                    } else {
+                        completion(.success(credentials))
+                    }
+                }
+            }
+        }
         
     }
     

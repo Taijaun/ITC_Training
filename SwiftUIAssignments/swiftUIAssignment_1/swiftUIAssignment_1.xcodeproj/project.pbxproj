@@ -23,6 +23,8 @@
 		DC88DB6229F29199007D838F /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB6129F29199007D838F /* DetailScreen.swift */; };
 		DC88DB6529F2968F007D838F /* FirstListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB6429F2968F007D838F /* FirstListCell.swift */; };
 		DC88DB6729F2B795007D838F /* FirstGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB6629F2B795007D838F /* FirstGridCell.swift */; };
+		DC944E312A0CEA2D00F38BEC /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944E302A0CEA2D00F38BEC /* Credentials.swift */; };
+		DC944E332A0CEAFA00F38BEC /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC944E322A0CEAFA00F38BEC /* Authentication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		DC88DB6129F29199007D838F /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 		DC88DB6429F2968F007D838F /* FirstListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstListCell.swift; sourceTree = "<group>"; };
 		DC88DB6629F2B795007D838F /* FirstGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstGridCell.swift; sourceTree = "<group>"; };
+		DC944E302A0CEA2D00F38BEC /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		DC944E322A0CEAFA00F38BEC /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				DC26C37A29F6793600986A2C /* Details.swift */,
+				DC944E302A0CEA2D00F38BEC /* Credentials.swift */,
+				DC944E322A0CEAFA00F38BEC /* Authentication.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -328,8 +334,10 @@
 				DC88DB3229F28556007D838F /* ContentView.swift in Sources */,
 				DC26C37829F66E0C00986A2C /* BindingView.swift in Sources */,
 				DC88DB3029F28556007D838F /* swiftUIAssignment_1App.swift in Sources */,
+				DC944E332A0CEAFA00F38BEC /* Authentication.swift in Sources */,
 				DC88DB6229F29199007D838F /* DetailScreen.swift in Sources */,
 				DC88DB6729F2B795007D838F /* FirstGridCell.swift in Sources */,
+				DC944E312A0CEA2D00F38BEC /* Credentials.swift in Sources */,
 				DC26C37B29F6793600986A2C /* Details.swift in Sources */,
 				DC88DB5C29F2898E007D838F /* LoginViewModel.swift in Sources */,
 				DC55A4F829F58416007CF63A /* CustomTabView.swift in Sources */,
@@ -495,6 +503,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"swiftUIAssignment_1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow access to Face ID to enable biometric login";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -523,6 +532,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"swiftUIAssignment_1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow access to Face ID to enable biometric login";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

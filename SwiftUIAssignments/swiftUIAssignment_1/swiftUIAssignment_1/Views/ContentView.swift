@@ -28,7 +28,7 @@ struct ContentView: View {
     @State var userPassword: String = ""
     @State var titleText = "ITC"
     
-    let loginViewModel = LoginViewModel()
+    @StateObject var loginViewModel = LoginViewModel()
     @State var path = [Root]()
     @State var isBindingScreenVisible = false
     @EnvironmentObject var details: Details
@@ -48,25 +48,45 @@ struct ContentView: View {
                     .textFieldStyle(.roundedBorder)
                     .padding()
                 
-                Button{
-                    if loginViewModel.isLoginValid(email: userEmail, password: userPassword){
-                        print(userEmail)
-                        print(userPassword)
-                        
-                        details.email = userEmail
-                        details.password = userPassword
-                        
-                        
-                        path.append(.list)
-                    } else {
-                        print("Invalid login")
-                    }
+                if loginViewModel.checkBiometricType() != .none{
                     
-                }label: {
-                    Text("Login")
-                        .frame(width: 200, height: 30)
-                }.buttonStyle(.borderedProminent)
-                
+                    Button {
+                        loginViewModel.authenticateUser(email: userEmail, password: userPassword) { result in
+                            switch result {
+                                
+                            case .success(_):
+                                print("Successfully validated")
+                                path.append(.list)
+                            case .failure(_):
+                                print("Failed to validate user")
+                            }
+                        }
+                    } label: {
+                        Image(systemName: "faceid").resizable()
+                            .frame(width: 50.0, height: 50.0)
+                    }
+
+                    
+                } else {
+                    Button{
+                        if loginViewModel.isLoginValid(email: userEmail, password: userPassword){
+                            print(userEmail)
+                            print(userPassword)
+                            
+                            details.email = userEmail
+                            details.password = userPassword
+                            
+                            
+                            path.append(.list)
+                        } else {
+                            print("Invalid login")
+                        }
+                        
+                    }label: {
+                        Text("Login")
+                            .frame(width: 200, height: 30)
+                    }.buttonStyle(.borderedProminent)
+                }
                 
                 NavigationLink{
                     GridScreen()
