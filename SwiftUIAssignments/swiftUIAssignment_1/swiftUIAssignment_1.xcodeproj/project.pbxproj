@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DC26C37829F66E0C00986A2C /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC26C37729F66E0C00986A2C /* BindingView.swift */; };
 		DC26C37B29F6793600986A2C /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC26C37A29F6793600986A2C /* Details.swift */; };
+		DC35A3F92A0E2D8F009026BD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35A3F82A0E2D8F009026BD /* MainView.swift */; };
 		DC55A4F829F58416007CF63A /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55A4F729F58416007CF63A /* CustomTabView.swift */; };
 		DC88DB3029F28556007D838F /* swiftUIAssignment_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB2F29F28556007D838F /* swiftUIAssignment_1App.swift */; };
 		DC88DB3229F28556007D838F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB3129F28556007D838F /* ContentView.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		DC26C37729F66E0C00986A2C /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
 		DC26C37A29F6793600986A2C /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		DC35A3F82A0E2D8F009026BD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DC55A4F729F58416007CF63A /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		DC88DB2C29F28556007D838F /* swiftUIAssignment_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUIAssignment_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC88DB2F29F28556007D838F /* swiftUIAssignment_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIAssignment_1App.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		DC88DB5929F28956007D838F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DC35A3F82A0E2D8F009026BD /* MainView.swift */,
 				DC26C37629F66DDA00986A2C /* Wrappers */,
 				DC88DB6329F2967B007D838F /* CustomCells */,
 				DC88DB3129F28556007D838F /* ContentView.swift */,
@@ -331,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC88DB6529F2968F007D838F /* FirstListCell.swift in Sources */,
+				DC35A3F92A0E2D8F009026BD /* MainView.swift in Sources */,
 				DC88DB3229F28556007D838F /* ContentView.swift in Sources */,
 				DC26C37829F66E0C00986A2C /* BindingView.swift in Sources */,
 				DC88DB3029F28556007D838F /* swiftUIAssignment_1App.swift in Sources */,
