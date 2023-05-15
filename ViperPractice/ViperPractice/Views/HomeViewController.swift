@@ -16,9 +16,9 @@ class HomeViewController: UIViewController, AnyView {
         // assign data to table etc
         productList = products
         
-//        DispatchQueue.main.async {
-//            self.tableView.reloadData()
-//        }
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
         print("In ViewController")
     }
     
@@ -47,13 +47,13 @@ class HomeViewController: UIViewController, AnyView {
 extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dummyData.count
+        return productList.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "FirstCell") as? FirstTableViewCell else {return UITableViewCell()}
-        cell.labelProductName.text = dummyData[indexPath.row]
+        cell.labelProductName.text = productList[indexPath.row].title
         
         return cell
     }
