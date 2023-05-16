@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC70EEEA2A136ED900C5A51D /* AnyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70EEE92A136ED900C5A51D /* AnyPresenter.swift */; };
+		DC70EEEC2A13701000C5A51D /* AnyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70EEEB2A13701000C5A51D /* AnyInteractor.swift */; };
+		DC70EEEE2A13708700C5A51D /* AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70EEED2A13708700C5A51D /* AnyView.swift */; };
 		DCD64F6F2A123B7500B2AF79 /* SwiftUI_ViperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD64F6E2A123B7500B2AF79 /* SwiftUI_ViperApp.swift */; };
-		DCD64F712A123B7500B2AF79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD64F702A123B7500B2AF79 /* ContentView.swift */; };
+		DCD64F712A123B7500B2AF79 /* EntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD64F702A123B7500B2AF79 /* EntryPoint.swift */; };
 		DCD64F732A123B7600B2AF79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD64F722A123B7600B2AF79 /* Assets.xcassets */; };
 		DCD64F762A123B7600B2AF79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD64F752A123B7600B2AF79 /* Preview Assets.xcassets */; };
 		DCD64F802A123B7600B2AF79 /* SwiftUI_ViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD64F7F2A123B7600B2AF79 /* SwiftUI_ViperTests.swift */; };
@@ -38,9 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC70EEE92A136ED900C5A51D /* AnyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyPresenter.swift; sourceTree = "<group>"; };
+		DC70EEEB2A13701000C5A51D /* AnyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyInteractor.swift; sourceTree = "<group>"; };
+		DC70EEED2A13708700C5A51D /* AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyView.swift; sourceTree = "<group>"; };
 		DCD64F6B2A123B7500B2AF79 /* SwiftUI_Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD64F6E2A123B7500B2AF79 /* SwiftUI_ViperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ViperApp.swift; sourceTree = "<group>"; };
-		DCD64F702A123B7500B2AF79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DCD64F702A123B7500B2AF79 /* EntryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPoint.swift; sourceTree = "<group>"; };
 		DCD64F722A123B7600B2AF79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCD64F752A123B7600B2AF79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DCD64F7B2A123B7600B2AF79 /* SwiftUI_ViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_ViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,7 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				DCD64F6E2A123B7500B2AF79 /* SwiftUI_ViperApp.swift */,
-				DCD64F702A123B7500B2AF79 /* ContentView.swift */,
+				DCD64F702A123B7500B2AF79 /* EntryPoint.swift */,
+				DC70EEED2A13708700C5A51D /* AnyView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -151,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				DCD64FA32A123EA800B2AF79 /* ProductInteractor.swift */,
+				DC70EEEB2A13701000C5A51D /* AnyInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -159,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				DCD64FA12A123E4600B2AF79 /* ProductPresenter.swift */,
+				DC70EEE92A136ED900C5A51D /* AnyPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -310,11 +319,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCD64FA02A123E3A00B2AF79 /* ProductEntity.swift in Sources */,
-				DCD64F712A123B7500B2AF79 /* ContentView.swift in Sources */,
+				DC70EEEC2A13701000C5A51D /* AnyInteractor.swift in Sources */,
+				DCD64F712A123B7500B2AF79 /* EntryPoint.swift in Sources */,
+				DC70EEEA2A136ED900C5A51D /* AnyPresenter.swift in Sources */,
 				DCD64F9E2A123CFB00B2AF79 /* Router.swift in Sources */,
 				DCD64F6F2A123B7500B2AF79 /* SwiftUI_ViperApp.swift in Sources */,
 				DCD64FA42A123EA800B2AF79 /* ProductInteractor.swift in Sources */,
 				DCD64FA22A123E4600B2AF79 /* ProductPresenter.swift in Sources */,
+				DC70EEEE2A13708700C5A51D /* AnyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
