@@ -7,23 +7,11 @@
 
 #ifndef Planet_h
 #define Planet_h
-
 @interface Planet : NSObject
 @property (strong, nonatomic) NSString* planetName;
 @property (strong, nonatomic) NSNumber* population;
 
--(void) getPlanetDetails;
-@end
-
-@implementation Planet
-
--(void)setPlanetDetails:(NSString)planetName andPopulation:(NSNumber*) {
-    self.planetName = planetName
-    self.population = planetPopulation
-    
-}
-
-
+-(instancetype) setPlanetDetails:(NSString*)planetName andPopulation:(NSNumber*) planetPopulation;
 @end
 
 #endif /* Planet_h */

@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "TestViewController.h"
+#import "Planet.h"
 
 @interface ViewController ()
 
@@ -28,6 +29,8 @@
     _buttonName = @"Navigate";
     [_buttonNavigation setTitle:_buttonName forState:UIControlStateNormal];
     _labelScreenName.text = _textEntry;
+    Planet* planet = [[Planet alloc] setPlanetDetails:@"Earth" andPopulation:@7000000];
+    NSLog(@"%@", planet.population);
     
 }
 
@@ -38,6 +41,10 @@
 
 
 - (IBAction)navigateButtonTapped:(id)sender {
+    
+    //Planet* planet = [[Planet alloc] init];
+    
+
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     TestViewController* testVC = [storyboard instantiateViewControllerWithIdentifier:@"TestViewController"];
     testVC.screenTitle = _textEntry;
