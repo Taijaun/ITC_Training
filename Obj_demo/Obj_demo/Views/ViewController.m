@@ -48,6 +48,7 @@
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     TestViewController* testVC = [storyboard instantiateViewControllerWithIdentifier:@"TestViewController"];
     testVC.screenTitle = _textEntry;
+    
     [self presentViewController:testVC animated:true completion:nil];
 }
 

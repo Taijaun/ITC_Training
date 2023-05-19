@@ -26,6 +26,7 @@
 		DC6758DE29F0406300EC862D /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758DC29F0406200EC862D /* SecondTableViewCell.swift */; };
 		DC6758DF29F0406300EC862D /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6758DD29F0406200EC862D /* SecondTableViewCell.xib */; };
 		DC6758E129F06BD000EC862D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758E029F06BD000EC862D /* Extensions.swift */; };
+		DC70EF732A161B0900C5A51D /* dummyjson.com.cer in Resources */ = {isa = PBXBuildFile; fileRef = DC70EF722A161AF800C5A51D /* dummyjson.com.cer */; };
 		DC88DB1029F13CD5007D838F /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB0F29F13CD5007D838F /* FirstCollectionViewCell.swift */; };
 		DC88DB1329F14476007D838F /* SecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88DB1129F14476007D838F /* SecondCollectionViewCell.swift */; };
 		DC88DB1429F14476007D838F /* SecondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC88DB1229F14476007D838F /* SecondCollectionViewCell.xib */; };
@@ -79,6 +80,7 @@
 		DC6758DC29F0406200EC862D /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
 		DC6758DD29F0406200EC862D /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
 		DC6758E029F06BD000EC862D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DC70EF722A161AF800C5A51D /* dummyjson.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = dummyjson.com.cer; sourceTree = "<group>"; };
 		DC88DB0F29F13CD5007D838F /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC88DB1129F14476007D838F /* SecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC88DB1229F14476007D838F /* SecondCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		DC67588E29F02CE600EC862D = {
 			isa = PBXGroup;
 			children = (
+				DC70EF722A161AF800C5A51D /* dummyjson.com.cer */,
 				DC67589929F02CE600EC862D /* MVVM_Assignment */,
 				DC6758B029F02CE700EC862D /* MVVM_AssignmentTests */,
 				DC6758BA29F02CE700EC862D /* MVVM_AssignmentUITests */,
@@ -343,6 +346,7 @@
 				DC6758A429F02CE600EC862D /* Assets.xcassets in Resources */,
 				DC6758A229F02CE600EC862D /* Main.storyboard in Resources */,
 				DC6758DF29F0406300EC862D /* SecondTableViewCell.xib in Resources */,
+				DC70EF732A161B0900C5A51D /* dummyjson.com.cer in Resources */,
 				DC88DB1429F14476007D838F /* SecondCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
